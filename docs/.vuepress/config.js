@@ -14,11 +14,7 @@ module.exports = {
                         },
                         {
                           title: 'API',
-                          children: ['Myself']
-                        },
-                        {
-                          title: '板块3',
-                          children: ['4']
+                          children: ['Myself','Address','Label']
                         }
                     ],
                 }
