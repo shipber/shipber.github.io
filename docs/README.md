@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 home: true
 heroImage: https://s3.bmp.ovh/imgs/2021/10/616afc8c335951c8.png
@@ -36,3 +37,5 @@ footer: byAdber
     <!-- <p style="margin:0px;font-size: 12px;color:#666">Controllability</p> -->
   </div>
 </div>
+=======
+>>>>>>> 7241b36af30ece49c84660169c1e78648dc7cf41
