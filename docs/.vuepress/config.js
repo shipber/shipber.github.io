@@ -1,24 +1,23 @@
 module.exports = {
-    title: 'Shipber',
+    title: 'Shipber API',
     description: ' ',
-
-            themeConfig: {
-                nav: [
-                  { text: 'Docs', link: '/sidebar/API/' },
-                ],
-                sidebar: {
-                    '/sidebar/API/' : [
-                        {
-                          title: 'START HERE',
-                          children: ['Overview']
-                        },
-                        {
-                          title: 'API',
-                          children: ['Myself','Address','Label']
-                        },
-                    ],
-                }
-
-              }
-        
-  }
+    themeConfig: {
+        logo: '/images/logo.png',
+        nav: [
+            {text: 'Docs', link: '/sidebar/API/'},
+        ],
+        sidebar: {
+            '/sidebar/API/': [
+                '/sidebar/API/',
+                {
+                    title: 'API',
+                    children: ['Information', 'Address', 'Rate','Label'],
+                    collapsable: false
+                },
+            ],
+        }
+    },
+    plugins: [
+        'vuepress-plugin-element-tabs'
+    ]
+}

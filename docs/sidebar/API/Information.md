@@ -1,6 +1,6 @@
-# Myselef
+# Personal information
 
-## My Service
+## My Shipping Service
 
 <table><tr><td bgcolor=#bdbdbd>GET</td><td>/v1/open-api/user/shipping-services</td></tr></table>
 
@@ -15,7 +15,7 @@ Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
 
 ### Example Response
 
-```
+```json
 {
     "data": [{
         "carrier": "ups",
@@ -72,7 +72,7 @@ Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
 
 ### Example Response
 
-```
+```json
 {
     "data": {
         "balance": "99999882.84",
