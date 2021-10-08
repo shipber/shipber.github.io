@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 home: true
 heroImage: https://s3.bmp.ovh/imgs/2021/10/616afc8c335951c8.png
@@ -38,4 +37,3 @@ footer: byAdber
   </div>
 </div>
 =======
->>>>>>> 7241b36af30ece49c84660169c1e78648dc7cf41
