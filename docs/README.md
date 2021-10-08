@@ -3,11 +3,11 @@ home: true
 heroImage: https://s3.bmp.ovh/imgs/2021/10/616afc8c335951c8.png
 heroText: The First Choice Shipping API
 features:
-- title: CHOOSE YOUR SHIPPING CARRIERS
+- title: Choose your shipping carriers
   details: Connect your preferred carriers and let us maintain the integrations.
-- title: STREAMLINE YOUR SHIPMENT SYSTEM
+- title: Streamline your shipment system
   details: Validate addresses, shop rates and print labels — and save time.
-- title: SAVE ON SHIPPING COSTS
+- title: Save on shipping costs
   details: Take advantage of our steep carrier discounts or bring your own rates.
 footer: byAdber
 ---

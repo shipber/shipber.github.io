@@ -6,6 +6,8 @@
 <font size=6 color='rgb(51, 51, 51)'>Currently provided interface </font> <br>
 + <font color='rgb(51, 51, 51)'> Ship From List </font><br>
 Get available sender addresses
+
+
 + <font color='rgb(51, 51, 51)'> Rate </font><br>
 One-click batch calculation of the rates of multiple logistics providers/services/accounts
 + <font color='rgb(51, 51, 51)'> Address validation </font><br>
