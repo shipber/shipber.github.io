@@ -4,21 +4,16 @@
 
 <table><tr><td bgcolor=#bdbdbd>GET</td><td>/v1/open-api/user/shipping-services</td></tr></table>
 
-<font size='5' color='rgb(51, 51, 51)'> Header </font><br>
+### Header 
 
-<table>
-    <tr bgcolor='#f5f5f5'>
-        <th>Label	</th><th>Required	</th><th width='490px'>instruction	</th>
-    </tr>
-    <tr>
-        <td><font>Api-Key	</font></td><td><font>Yes	</font></td><td>Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-    <tr>
-        <td><font>Api-Secret	</font></td><td><font>Yes	</font></td><td >Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-</table>
+Label	|Required|instruction
+:--:|:--:|:--:
+Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
+Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
 
-<font size='5' color='rgb(51, 51, 51)'>Response</font><br>
+
+
+### Example Response
 
 ```
 {
@@ -41,40 +36,41 @@
 }
 ```
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+### Entity Types
+
+**The address recognition API is currently designed to recognize the following types of entities:**
+
+Parameter|Type|Required
+:--:|:--:|:--:
+data|[array]|√
+carrier|[string]|√
+code|[string]|√
+addresses|[array]|√
+nick_name|[string]|√
+city|[string]|√
+name|[string]|√
+addresses|[array]|√
+telephone|[string]|√
+postal_code|[string]|√
+country_code|[string]|√
+is_residential|[boolean]|√
+state_province_code|[string]|√
+name|[string]|√
+
 
 ## Profile
 
 <table><tr><td bgcolor=#bdbdbd>GET</td><td>/v1/open-api/user</td></tr></table>
 
-<font size='5' color='rgb(51, 51, 51)'> Header </font><br>
+### Header 
 
-<table>
-    <tr bgcolor='#f5f5f5'>
-        <th>Label	</th><th>Required	</th><th width='490px'>instruction	</th>
-    </tr>
-    <tr>
-        <td><font>Api-Key	</font></td><td><font>Yes	</font></td><td>Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-    <tr>
-        <td><font>Api-Secret	</font></td><td><font>Yes	</font></td><td >Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-</table>
+Label	|Required|instruction
+:--:|:--:|:--:
+Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
+Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
 
-<font size='5' color='rgb(51, 51, 51)'>Response</font><br>
+
+### Example Response
 
 ```
 {
@@ -88,3 +84,17 @@
     }
 }
 ```
+
+### Entity Types
+
+**The address recognition API is currently designed to recognize the following types of entities:**
+
+Parameter|Type|Required
+:--:|:--:|:--:
+data|[object]|   |√
+balance|[string]|√
+email|[string]|√
+name|[[string]|√
+mobile|[string]|√
+company|[string]|√
+address|[string]|√

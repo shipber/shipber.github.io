@@ -2,51 +2,52 @@
 
 ## Getting Started
 
+### Currently provided interface 
 
-<font size=6 color='rgb(51, 51, 51)'>Currently provided interface </font> <br>
-+ <font color='rgb(51, 51, 51)'> Ship From List </font><br>
++ **Ship From List** <br>
 Get available sender addresses
 
 
-+ <font color='rgb(51, 51, 51)'> Rate </font><br>
++ **Rate** <br>
 One-click batch calculation of the rates of multiple logistics providers/services/accounts
-+ <font color='rgb(51, 51, 51)'> Address validation </font><br>
++ **Address validation** <br>
 Address check interface
-+ <font color='rgb(51, 51, 51)'> Shipping </font><br>
++ **Shipping** <br>
 Create and customize shipping labels
-+ <font color='rgb(51, 51, 51)'> Get Label </font><br>
++ **Get Label** <br>
 Obtain Label information and convert the waybill created by Shipping into PDF format for printing
-+ <font color='rgb(51, 51, 51)'> Cancel </font><br>
++ **Cancel** <br>
 Waybill cancellation, cancel the waybill created by Shipping before
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
+
+
 
 ## Sandbox Environment
 
-<font size=6 color='rgb(51, 51, 51)'>Environment:</font> <br>
-<font size=5 color='rgb(51, 51, 51)'>Test Environment:</font> <font size=3 color='rgb(51, 51, 51)'>**https://api.sandbox.shipber.app** </font> <br>
-<font size=5 color='rgb(51, 51, 51)'>Account password used for testing </font> <br>
-<br>
-<font size=3 > api-key：</font> <font size=3 color='rgb(51, 51, 51)'> **2cn1wgmfidytin3jef3b** </font> <br>
-<font size=3 > api-secret：</font> <font size=3 color='rgb(51, 51, 51)'> **qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C** </font> <br>
+
+### URL
+
+
+ **Test Environment:** `https://api.sandbox.shipber.app` <br>
+
+ **Formal environment:** `https://api.shipber.app` 
+
+
 <br>
 
-<font size=5 color='rgb(51, 51, 51)'>Formal environment:</font> <font size=3 color='rgb(51, 51, 51)'>**https://api.shipber.app** </font> <br>
+### Account password used for testing  
 
-<font size=4 color='rgb(51, 51, 51)'>Suggested test steps</font> <br>
+```
+api-key： 2cn1wgmfidytin3jef3b 
+api-secret： qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C
+```
+
+<br>
+
+### Suggested test steps
+
 1. First use the test account to obtain the sending address according to the ship from interface (uuid and ship from will be returned) 
 2. The next step is the validate interface to verify whether the sendable address is available
 3. The third step is the rate interface pricing (note: the uuid and detailed address of the ship from field are two options, it is recommended to use uuid because the error rate of only one field will be very low)
@@ -54,5 +55,7 @@ Waybill cancellation, cancel the waybill created by Shipping before
 5. The fifth step is to get/label to query the order interface
 6. The last is the cancel interface
 
-<font size=4 color='rgb(51, 51, 51)'>Be sure to perform a very complete test in the test environment before going to the formal environment for ordering operations. </font>
+<br>
+
+**Be sure to perform a very complete test in the test environment before going to the formal environment for ordering operations.**
 

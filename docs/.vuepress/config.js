@@ -1,6 +1,6 @@
 module.exports = {
     title: 'Shipber',
-    description: 'Just playing around',
+    description: ' ',
 
             themeConfig: {
                 nav: [

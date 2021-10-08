@@ -5,21 +5,15 @@
 <table><tr><td bgcolor=#bdbdbd>POST</td><td>/v1/open-api/rate</td></tr></table>
 
 
-<font size='5' color='rgb(51, 51, 51)'> Header </font><br>
+### Header 
 
-<table>
-    <tr bgcolor='#f5f5f5'>
-        <th>Label	</th><th>Required	</th><th width='490px'>instruction	</th>
-    </tr>
-    <tr>
-        <td><font>Api-Key	</font></td><td><font>Yes	</font></td><td>Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-    <tr>
-        <td><font>Api-Secret	</font></td><td><font>Yes	</font></td><td >Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-</table>
+Label	|Required|instruction
+:--:|:--:|:--:
+Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
+Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
 
-<font size='5' color='rgb(51, 51, 51)'>Body </font><br>
+### Body
+
 ```
 {
     "shipment": {
@@ -74,7 +68,63 @@
 }
 ```
 
-<font size='5' color='rgb(51, 51, 51)'>Response</font><br>
+### Entity Types
+
+**The address recognition API is currently designed to recognize the following types of entities:**
+
+Parameter|Type|Required
+:--:|:--:|:--:
+shipment|[object]|√
+service_code|[string]|
+ship_from|[object]|
+uuid|[array]|√
+postal_code|[string]|√
+country_code|[string]|√
+state_or_province_code|[string]|√
+is_residential|[boolean]|
+addresses|[array]|
+city|[string]|√
+name|[string]|
+phone|[boolean]|
+attention|[string]|√
+ship_to|[object]|√
+addresses|[array]|
+city|[string]|√
+state_province_code|[string]|√
+postal_code|[string]|√
+country_code|[string]|√
+name|[string]|
+phone|[string]|
+is_residential|[boolean]|
+attention|[string]|
+packages|[array]|√
+dimension|[object]|√
+width|[number]|√
+height|[number]|√
+length|[number]|√
+code|[string]|√
+weight|[object]|√
+code|[string]|√
+value|[number]|√
+insurance|[object]|
+code|[string]|
+value|[number]|
+confirmation|[string]|√
+quantity|[number]|√
+package_type|[object]|√
+type|[string]|√
+name|[string]|√
+pickup_date|[string]|√
+
+
+
+
+
+
+
+
+### Example Response
+
 ```
 {
     "data": {
@@ -99,40 +149,42 @@
 }
 ```
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+### Entity Types
+
+**The address recognition API is currently designed to recognize the following types of entities:**
+
+Parameter|Type|Required
+:--:|:--:|:--:
+data|[object]|√
+rates|[array]|√
+charge|[object]|√
+code|[string]|√
+value|[number]|√
+estimate_ship_time|[object]|√
+delivery_time_to_tz|[string]|√
+delivery_time_from_tz|[string]|√
+days|[number]|
+carrier|[string]|√
+service_code|[string]|√
+service_name|[string]|√
+carrier_service|[string]|√
+account_alias|[string]|√
+rate_id|[string]|√
+
 
 ## Create Label
 
 <table><tr><td bgcolor=#bdbdbd>POST</td><td>/v1/open-api/label</td></tr></table>
 
-<font size='5' color='rgb(51, 51, 51)'> Header </font><br>
+### Header 
 
-<table>
-    <tr bgcolor='#f5f5f5'>
-        <th>Label	</th><th>Required	</th><th width='490px'>instruction	</th>
-    </tr>
-    <tr>
-        <td><font>Api-Key	</font></td><td><font>Yes	</font></td><td>Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-    <tr>
-        <td><font>Api-Secret	</font></td><td><font>Yes	</font></td><td >Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-</table>
+Label	|Required|instruction
+:--:|:--:|:--:
+Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
+Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
 
-<font size='5' color='rgb(51, 51, 51)'>Response</font><br>
+### Example Response
 
 ```
 {
@@ -196,52 +248,80 @@
 }
 ```
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+### Entity Types
+
+**The address recognition API is currently designed to recognize the following types of entities:**
+
+Parameter|Type|Required
+:--:|:--:|:--:
+rate_id|[string]|√
+custom_order_num|[string]|√
+shipment|[object]|√
+service_code|[string]|
+ship_from|[object]|√
+uuid|[string]|√
+city|[string]|√
+name|[object]|√
+email|[string]|
+addresses|[array]|√
+postal_code|[string]|√
+country_code|[string]|√
+is_residential|[boolean]|
+state_province_code|[string]|√
+phone|[string]|√
+attention|[string]|
+ship_to|[object]|√
+city|[string]|√
+name|[string]|√
+email|[string]|
+addresses|[array]|√
+postal_code|[string]|√
+country_code|[string]|√
+is_residential|[boolean]|
+state_province_code|[string]|√
+phone|[string]|√
+attention|[string]|
+packages|[array]|√
+dimension|[object]|√
+width|[number]|√
+height|[number]|√
+length|[number]|√
+code|[string]|√
+weight|[object]|√
+code|[string]|√
+value|[number]|√
+confirmation|[string]|√
+insurance|[object]|
+code|[string]|
+value|[number]|
+quantity|[number]|√
+reference_numbers|[array]|√
+code|[string]|√
+value|[object]|√
+package_type|[object]|√
+type|[string]|√
+name|[string]|√
+pickup_date|[string]|√
 
 ## Download Label
 
 <table><tr><td bgcolor=#bdbdbd>GET</td><td>/v1/open-api/label?custom_order_num=</td></tr></table>
 
 
-<font size='5' color='rgb(51, 51, 51)'> Header </font><br>
+### Header 
 
-<table>
-    <tr bgcolor='#f5f5f5'>
-        <th>Label	</th><th>Required	</th><th width='490px'>instruction	</th>
-    </tr>
-    <tr>
-        <td><font>Api-Key	</font></td><td><font>Yes	</font></td><td>Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-    <tr>
-        <td><font>Api-Secret	</font></td><td><font>Yes	</font></td><td >Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-</table>
+Label	|Required|instruction
+:--:|:--:|:--:
+Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
+Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
 
-<font size='5' color='rgb(51, 51, 51)'>Query </font><br>
-<table>
-    <tr bgcolor='#f5f5f5'>
-        <th>Parameter Name	</th><th> Type	</th><th width='490px'>Required	</th>
-    </tr>
-    <tr>
-        <td><font>custom_order_num	</font></td><td><font>	
-[string]	</font></td><td>Yes	</td>
-    </tr>
-</table>
+ ### Query 
 
-<font size='5' color='rgb(51, 51, 51)'>Response</font><br>
+Parameter Name	|Type|Required
+:--:|:--:|:--:
+custom_order_num	|[string]	|Yes
+
+### Example Response
 ```
 {
     "data": {
@@ -270,48 +350,63 @@
     }
 }
 ```
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+### Entity Types
+
+**The address recognition API is currently designed to recognize the following types of entities:**
+
+Parameter|Type|Required
+:--:|:--:|:--:
+data|[object]|√
+order_num|[string]|√
+create_at|[string]|√
+custom_order_num|[string]|√
+status|[string]|√
+shipment|[object]|√
+packages|[array]|√
+identifier|[object]|√
+tracking_id_type|[string]|√
+identification_number|[string]|√
+tracking_number|[string]|√
+master_tracking_id_type|[string]|√
+master_tracking_number|[string]|√
+label_data|[string]|√
+uuid|[string]|√
+charge|[number]|√
+create_at|[string]|√
+label_download|[object]|√
+pdf|[string]|√
+
 
 ## Cancel Label
 
 <table><tr><td bgcolor=#bdbdbd>POST</td><td>/v1/open-api/label/cancel</td></tr></table>
 
 
-<font size='5' color='rgb(51, 51, 51)'> Header </font><br>
+### Header 
 
-<table>
-    <tr bgcolor='#f5f5f5'>
-        <th>Label	</th><th>Required	</th><th width='490px'>instruction	</th>
-    </tr>
-    <tr>
-        <td><font>Api-Key	</font></td><td><font>Yes	</font></td><td>Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-    <tr>
-        <td><font>Api-Secret	</font></td><td><font>Yes	</font></td><td >Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-</table>
+Label	|Required|instruction
+:--:|:--:|:--:
+Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
+Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
 
-<font size='5' color='rgb(51, 51, 51)'>Body </font><br>
+
+### Body 
 ```
 {
     "order_num": "string"
 }
 ```
 
-<font size='5' color='rgb(51, 51, 51)'>Response</font><br>
+### Entity Types
+
+**The address recognition API is currently designed to recognize the following types of entities:**
+
+Parameter|Type|Required
+:--:|:--:|:--:
+order_num|[string]|√
+
+### Example Response
 ```
 {
     "data": {
@@ -378,3 +473,62 @@
     }
 }
 ```
+
+### Entity Types
+
+**The address recognition API is currently designed to recognize the following types of entities:**
+
+Parameter|Type|Required
+:--:|:--:|:--:
+data|[object]|√
+status|[string]|√
+order_num|[string]|√
+custom_order_num|[string]|√
+shipment|[object]|√
+carrier_service|[string]|√
+ship_from|[object]|√
+uuid|[string]|√
+postal_code|[string]|√
+country_code|[string]|√
+state_or_province_code|[string]|√
+is_residential|[boolean]|√
+addresses|[array]|√
+city|[string]|√
+address_classification|[string]|√
+name|[string]|√
+phone|[string]|√
+attention|[string]|√
+ship_to|[object]|√
+postal_code|[string]|√
+country_code|[string]|√
+state_or_province_code|[string]|√
+is_residential|[boolean]|√
+addresses|[array]|√
+city|[string]|√
+address_classification|[string]|√
+name|[string]|√
+phone|[string]|√
+attention|[string]|√
+packages|[array]|√
+dimension|[object]|√
+width|[number]|√
+height|[number]|√
+length|[number]|√
+code|[string]|√
+weight|[object]|√
+code|[string]|√
+value|[number]|√
+confirmation|[string]|√
+insurance|[object]|
+code|[string]|√
+value|[number]|√
+quantity|[number]|√
+reference_numbers|[array]|√
+code|[string]|√
+value|[string]|√
+package_type|[object]|√
+type|[string]|√
+name|[string]|√
+pickup_date|[string]|√
+service_code|[string]|√
+created_at|[string]|√

@@ -5,21 +5,14 @@
 <table><tr><td bgcolor=#bdbdbd>GET</td><td>/v1/open-api/ship-from</td></tr></table>
 
 
-<font size='5' color='rgb(51, 51, 51)'> Header </font><br>
+### Header 
 
-<table>
-    <tr bgcolor='#f5f5f5'>
-        <th>Label	</th><th>Required	</th><th width='490px'>instruction	</th>
-    </tr>
-    <tr>
-        <td><font>Api-Key	</font></td><td><font>Yes	</font></td><td>Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-    <tr>
-        <td><font>Api-Secret	</font></td><td><font>Yes	</font></td><td >Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-</table>
+Label	|Required|instruction
+:--:|:--:|:--:
+Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
+Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
 
-<font size='5' color='rgb(51, 51, 51)'>Response </font><br>
+### Example Response 
 ```
 {
     "data": [{
@@ -39,41 +32,40 @@
 }
 ```
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+### Entity Types
+
+**The address recognition API is currently designed to recognize the following types of entities:**
+
+Parameter|Type|Required
+:--:|:--:|:--:
+data|[array]|√
+uuid|[string]|√
+postal_code|[string]|√
+country_code|[array]|√
+state_or_province_code|[string]|√
+is_residential|[boolean]|√
+addresses|[string]|√
+city|[array]|√
+address_classification|[array]|√
+name|[string]|√
+phone|[string]|√
+attention|[boolean]|√
+email|[string]|√
+
 
 ## Address Validation
 
 <table><tr><td bgcolor=#bdbdbd>POST</td><td>/v1/open-api/address/validate</td></tr></table>
 
 
-<font size='5' color='rgb(51, 51, 51)'> Header </font><br>
+### Header 
+Label	|Required|instruction
+:--:|:--:|:--:
+Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
+Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
 
-<table>
-    <tr bgcolor='#f5f5f5'>
-        <th>Label	</th><th>Required	</th><th width='490px'>instruction	</th>
-    </tr>
-    <tr>
-        <td><font>Api-Key	</font></td><td><font>Yes	</font></td><td>Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-    <tr>
-        <td><font>Api-Secret	</font></td><td><font>Yes	</font></td><td >Api Key, please log in to the system and find it in My Profile	</td>
-    </tr>
-</table>
+### Body 
 
-<font size='5' color='rgb(51, 51, 51)'>Body </font><br>
 ```
 {
     "addresses": ["5353 W Imperial Hwy Unit 900"],
@@ -85,7 +77,22 @@
 }
 ```
 
-<font size='5' color='rgb(51, 51, 51)'>Response</font><br>
+### Entity Types
+
+**The address recognition API is currently designed to recognize the following types of entities:**
+
+Parameter|Type|Required
+:--:|:--:|:--:
+addresses|[array]|√
+city|[string]|√
+state_province_code|[string]|√
+postal_code|[string]|√
+country_code|[string]|√
+is_residential|[boolean]|√
+
+
+### Example Response
+
 ```
 {
     "data": {
@@ -112,3 +119,31 @@
     "status": ""
 }
 ```
+
+### Entity Types
+
+**The address recognition API is currently designed to recognize the following types of entities:**
+
+Parameter|Type|Required
+:--:|:--:|:--:
+data|[object]|√
+status|[string]|√
+original_address|√
+postal_code|[string]|√
+country_code|[string]||√
+state_or_province_code|[string]|√
+is_residential|[boolean]|√
+addresses|[array]|√
+city|[string]|√
+address_classification|[string]|√
+is_residential|[string]|√
+matched_address|[object]|√
+postal_code|[string]|√
+country_code|[string]|√
+state_or_province_code|[string]|√
+is_residential|[boolean]|√
+addresses|[array]|√
+city|[string]|√
+address_classification|[string]|√
+status|[string]|√
+
