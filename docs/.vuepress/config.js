@@ -1,20 +1,24 @@
 module.exports = {
     title: 'Shipber',
-    description: ' ',
+    description: 'Just playing around',
 
             themeConfig: {
                 nav: [
-                  { text: 'Docs', link: '/sidebar/API/' },
+                  { text: 'Shipber', link: '/sidebar/API/' },
                 ],
                 sidebar: {
                     '/sidebar/API/' : [
                         {
-                          title: 'START HERE',
-                          children: ['Overview'],
+                          title: '板块1',
+                          children: ['1','2','']
                         },
                         {
-                          title: 'API',
-                          children: ['Myself','Address','Label']
+                          title: '板块2',
+                          children: ['3']
+                        },
+                        {
+                          title: '板块3',
+                          children: ['4']
                         }
                     ],
                 }
