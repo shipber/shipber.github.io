@@ -14,7 +14,7 @@ module.exports = {
                         },
                         {
                           title: 'API',
-                          children: ['Myself',' Address','Label']
+                          children: ['Myself','Address','Label']
                         },
                     ],
                 }
