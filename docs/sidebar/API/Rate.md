@@ -12,60 +12,15 @@ Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
 
 
 :::: tabs 
-::: tab Request
+::: tab Curl
 
 ```json
-{
-    "shipment": {
-        "service_code": "ups_ground",
-        "ship_from": {
-            "uuid": "7b572b8d-08a3-4cc7-a711-1aae28e9ffcf",
-            "postal_code": "90045-6275",
-            "country_code": "US",
-            "state_or_province_code": "CA",
-            "is_residential": false,
-            "addresses": ["5353 W IMPERIAL HWY STE 900"],
-            "city": "LOS ANGELES",
-            "name": "Test Company",
-            "phone": "0123456789",
-            "attention": "Tom"
-        },
-        "ship_to": {
-            "addresses": ["200 Ymca Way #438"],
-            "city": "Penfield",
-            "state_province_code": "NY",
-            "postal_code": "14526",
-            "country_code": "US",
-            "name": "123456",
-            "phone": "12345678900",
-            "is_residential": false,
-            "attention": ""
-        },
-        "packages": [{
-            "dimension": {
-                "width": 10,
-                "height": 10,
-                "length": 10,
-                "code": "IN"
-            },
-            "weight": {
-                "code": "lb",
-                "value": 20
-            },
-            "insurance": {
-                "code": "USD",
-                "value": 10
-            },
-            "confirmation": "None",
-            "quantity": 1
-        }],
-        "package_type": {
-            "type": "common",
-            "name": "Package"
-        },
-        "pickup_date": "20210416"
-    }
-}
+curl -X POST  \
+  'https://api.sandbox.shipber.app/v1/open-api/rate' \
+  -H 'Content-Type:application/json' \
+  -H 'Api-Key:2cn1wgmfidytin3jef3b' \
+  -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C' \
+  -d '{"shipment":{"ship_from":{"postal_code":"90045-6275","country_code":"US","state_or_province_code":"CA","city":"LOS ANGELES"},"ship_to":{"city":"Penfield","state_province_code":"NY","postal_code":"14526","country_code":"US"},"packages":[{"dimension":{"width":10,"height":10,"length":10,"code":"IN"},"weight":{"code":"lb","value":20},"confirmation":"None","quantity":1}],"package_type":{"type":"common","name":"Package"},"pickup_date":"20211010"}}'
 ```
 
 

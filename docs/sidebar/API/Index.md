@@ -24,19 +24,40 @@
 
 
 
-## Sandbox Environment URL
+## Sandbox Environment 
+
+### How to Use the Sandbox
+We will provide you with API-key and API-secret dedicated to the sandbox environment for testing, which is also convenient for you to test without incurring real costs and real tracking information
+Other than the API-key and API-secret, everything else is the same. So you can easily test and develop your application in the sandbox and then when you're ready to go to production all you need to do is change the API key.
+
+### Differences in Behavior
+Our sandbox environment matches the production environment as much as possible, but there are a few differences to be aware of:
+
+### Limited Parcel Carriers
+We currently only support the three major US parcel carriers -- UPS, FedEx, Pitney Bowes and USPS (Stamps.com). Other carriers will be added in the future, including international carriers.However, in the sandbox environment, the account only provides three services: FedEx Ground, FedEx Home Delivery and UPS Ground for testing.Rates
+
+### Rates
+The shipping rates that you get in the sandbox may not match the rates that you get in production. Any negotiated rate discounts that you have are not applied in the sandbox, and some rates are "dummy" rates to prevent abuse of our sandbox for production purposes.
+
+### Test Labels
+Created in the sandbox environment with multiple Labels per shipment or one Label per shipment, because in fact printing the label will incur costs,  we set up a test label for download,so the printed labels are all the same label
 
 
-**Test Environment:** `https://api.sandbox.shipber.app` <br>
+### Test Environment: `https://api.sandbox.shipber.app` 
 
-**Formal environment:** `https://api.shipber.app`
+<br>
 
-### Account password used for testing
+### Account password used for testing 
 ```
 api-key： 2cn1wgmfidytin3jef3b 
 api-secret： qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C
 ```
 
+<br>
+
+### Formal environment: `https://api.shipber.app` 
+
+<br>
 
 ### Suggested test steps
 
