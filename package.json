@@ -13,7 +13,7 @@
   "devDependencies": {
     "vuepress": "^1.8.2",
     "vuepress-plugin-element-tabs": "^0.2.8",
-    "vuepress-plugin-element-ui": "^1.1.0"
+    "vuepress-plugin-one-click-copy": "^1.0.6"
   },
   "directories": {
     "doc": "docs"
@@ -25,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/shipber/shipber.github.io/issues"
   },
-  "homepage": "https://github.com/shipber/shipber.github.io#readme"
+  "homepage": "https://github.com/shipber/shipber.github.io#readme",
+  "dependencies": {}
 }

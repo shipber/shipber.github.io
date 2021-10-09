@@ -4,7 +4,7 @@ module.exports = {
     themeConfig: {
         logo: '/images/logo.png',
         nav: [
-            {text: 'Docs', link: '/sidebar/API/'},
+            {text: 'Documents', link: '/sidebar/API/'},
         ],
         sidebar: {
             '/sidebar/API/': [
@@ -18,6 +18,7 @@ module.exports = {
         }
     },
     plugins: [
-        'vuepress-plugin-element-tabs'
+        'vuepress-plugin-element-tabs',
+        'one-click-copy'
     ]
 }
