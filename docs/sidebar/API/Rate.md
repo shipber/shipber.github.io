@@ -5,10 +5,10 @@
 
 ### Header 
 
-Label	|Required|instruction
-:--:|:--:|:--:
-Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
-Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
+|   Label    | Required |                         instruction                          |
+| :--------: | :------: | :----------------------------------------------------------: |
+|  Api-Key   |   Yes    | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   Yes    | Api Key, please log in to the system and find it in My Profile |
 
 
 :::: tabs 
@@ -64,49 +64,49 @@ curl -X POST  \
 
 **The address recognition API is currently designed to recognize the following types of entities:**
 
-Parameter|Type|Required
-:--:|:--:|:--:
-shipment|[object]|√
-service_code|[string]|
-ship_from|[object]|
-uuid|[array]|√
-postal_code|[string]|√
-country_code|[string]|√
-state_or_province_code|[string]|√
-is_residential|[boolean]|
-addresses|[array]|
-city|[string]|√
-name|[string]|
-phone|[boolean]|
-attention|[string]|√
-ship_to|[object]|√
-addresses|[array]|
-city|[string]|√
-state_province_code|[string]|√
-postal_code|[string]|√
-country_code|[string]|√
-name|[string]|
-phone|[string]|
-is_residential|[boolean]|
-attention|[string]|
-packages|[array]|√
-dimension|[object]|√
-width|[number]|√
-height|[number]|√
-length|[number]|√
-code|[string]|√
-weight|[object]|√
-code|[string]|√
-value|[number]|√
-insurance|[object]|
-code|[string]|
-value|[number]|
-confirmation|[string]|√
-quantity|[number]|√
-package_type|[object]|√
-type|[string]|√
-name|[string]|√
-pickup_date|[string]|√
+|       Parameter        |   Type    | Required |
+| :--------------------: | :-------: | :------: |
+|        shipment        | [object]  |    √     |
+|      service_code      | [string]  |          |
+|       ship_from        | [object]  |          |
+|          uuid          |  [array]  |    √     |
+|      postal_code       | [string]  |    √     |
+|      country_code      | [string]  |    √     |
+| state_or_province_code | [string]  |    √     |
+|     is_residential     | [boolean] |          |
+|       addresses        |  [array]  |          |
+|          city          | [string]  |    √     |
+|          name          | [string]  |          |
+|         phone          | [boolean] |          |
+|       attention        | [string]  |    √     |
+|        ship_to         | [object]  |    √     |
+|       addresses        |  [array]  |          |
+|          city          | [string]  |    √     |
+|  state_province_code   | [string]  |    √     |
+|      postal_code       | [string]  |    √     |
+|      country_code      | [string]  |    √     |
+|          name          | [string]  |          |
+|         phone          | [string]  |          |
+|     is_residential     | [boolean] |          |
+|       attention        | [string]  |          |
+|        packages        |  [array]  |    √     |
+|       dimension        | [object]  |    √     |
+|         width          | [number]  |    √     |
+|         height         | [number]  |    √     |
+|         length         | [number]  |    √     |
+|          code          | [string]  |    √     |
+|         weight         | [object]  |    √     |
+|          code          | [string]  |    √     |
+|         value          | [number]  |    √     |
+|       insurance        | [object]  |          |
+|          code          | [string]  |          |
+|         value          | [number]  |          |
+|      confirmation      | [string]  |    √     |
+|        quantity        | [number]  |    √     |
+|      package_type      | [object]  |    √     |
+|          type          | [string]  |    √     |
+|          name          | [string]  |    √     |
+|      pickup_date       | [string]  |    √     |
 
 
 :::
@@ -142,24 +142,23 @@ pickup_date|[string]|√
 
 **The address recognition API is currently designed to recognize the following types of entities:**
 
-Parameter|Type|Required
-:--:|:--:|:--:
-data|[object]|√
-rates|[array]|√
-charge|[object]|√
-code|[string]|√
-value|[number]|√
-estimate_ship_time|[object]|√
-delivery_time_to_tz|[string]|√
-delivery_time_from_tz|[string]|√
-days|[number]|
-carrier|[string]|√
-service_code|[string]|√
-service_name|[string]|√
-carrier_service|[string]|√
-account_alias|[string]|√
-rate_id|[string]|√
-
+|       Parameter       |   Type   | Required |
+| :-------------------: | :------: | :------: |
+|         data          | [object] |    √     |
+|         rates         | [array]  |    √     |
+|        charge         | [object] |    √     |
+|         code          | [string] |    √     |
+|         value         | [number] |    √     |
+|  estimate_ship_time   | [object] |    √     |
+|  delivery_time_to_tz  | [string] |    √     |
+| delivery_time_from_tz | [string] |    √     |
+|         days          | [number] |          |
+|        carrier        | [string] |    √     |
+|     service_code      | [string] |    √     |
+|     service_name      | [string] |    √     |
+|    carrier_service    | [string] |    √     |
+|     account_alias     | [string] |    √     |
+|        rate_id        | [string] |    √     |
 
 :::
 ::::

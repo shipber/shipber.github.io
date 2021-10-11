@@ -6,10 +6,10 @@
 
 ### Header 
 
-Label	|Required|instruction
-:--:|:--:|:--:
-Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
-Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
+|   Label    | Required |                         instruction                          |
+| :--------: | :------: | :----------------------------------------------------------: |
+|  Api-Key   |   Yes    | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   Yes    | Api Key, please log in to the system and find it in My Profile |
 
 
 
@@ -27,22 +27,24 @@ curl -X GET  \
 
 **The address recognition API is currently designed to recognize the following types of entities:**
 
-Parameter|Type|Required
-:--:|:--:|:--:
-data|[array]|√
-carrier|[string]|√
-code|[string]|√
-addresses|[array]|√
-nick_name|[string]|√
-city|[string]|√
-name|[string]|√
-addresses|[array]|√
-telephone|[string]|√
-postal_code|[string]|√
-country_code|[string]|√
-is_residential|[boolean]|√
-state_province_code|[string]|√
-name|[string]|√
+|      Parameter      |   Type    | Required |
+| :-----------------: | :-------: | :------: |
+|        data         |  [array]  |    √     |
+|       carrier       | [string]  |    √     |
+|        code         | [string]  |    √     |
+|      addresses      |  [array]  |    √     |
+|      nick_name      | [string]  |    √     |
+|        city         | [string]  |    √     |
+|        name         | [string]  |    √     |
+|      addresses      |  [array]  |    √     |
+|      telephone      | [string]  |    √     |
+|     postal_code     | [string]  |    √     |
+|    country_code     | [string]  |    √     |
+|   is_residential    | [boolean] |    √     |
+| state_province_code | [string]  |    √     |
+|        name         | [string]  |    √     |
+
+
 
 
 ## Profile
@@ -51,10 +53,10 @@ name|[string]|√
 
 ### Header 
 
-Label	|Required|instruction
-:--:|:--:|:--:
-Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
-Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
+|   Label    | Required |                         instruction                          |
+| :--------: | :------: | :----------------------------------------------------------: |
+|  Api-Key   |   Yes    | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   Yes    | Api Key, please log in to the system and find it in My Profile |
 
 
 ### Example Curl
@@ -71,12 +73,12 @@ curl -X GET  \
 
 **The address recognition API is currently designed to recognize the following types of entities:**
 
-Parameter|Type|Required
-:--:|:--:|:--:
-data|[object]|   |√
-balance|[string]|√
-email|[string]|√
-name|[[string]|√
-mobile|[string]|√
-company|[string]|√
-address|[string]|√
+| Parameter |   Type    | Required |
+| :-------: | :-------: | :------: |
+|   data    | [object]  |          |
+|  balance  | [string]  |    √     |
+|   email   | [string]  |    √     |
+|   name    | [[string] |    √     |
+|  mobile   | [string]  |    √     |
+|  company  | [string]  |    √     |
+|  address  | [string]  |    √     |

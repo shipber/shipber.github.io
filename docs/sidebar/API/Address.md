@@ -7,10 +7,10 @@
 
 ### Header 
 
-Label	|Required|instruction
-:--:|:--:|:--:
-Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
-Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
+|   Label    | Required |                         instruction                          |
+| :--------: | :------: | :----------------------------------------------------------: |
+|  Api-Key   |   Yes    | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   Yes    | Api Key, please log in to the system and find it in My Profile |
 
 ### Example Curl
 ```json
@@ -25,21 +25,21 @@ curl -X GET  \
 
 **The address recognition API is currently designed to recognize the following types of entities:**
 
-Parameter|Type|Required
-:--:|:--:|:--:
-data|[array]|√
-uuid|[string]|√
-postal_code|[string]|√
-country_code|[array]|√
-state_or_province_code|[string]|√
-is_residential|[boolean]|√
-addresses|[string]|√
-city|[array]|√
-address_classification|[array]|√
-name|[string]|√
-phone|[string]|√
-attention|[boolean]|√
-email|[string]|√
+|       Parameter        |   Type    | Required |
+| :--------------------: | :-------: | :------: |
+|          data          |  [array]  |    √     |
+|          uuid          | [string]  |    √     |
+|      postal_code       | [string]  |    √     |
+|      country_code      |  [array]  |    √     |
+| state_or_province_code | [string]  |    √     |
+|     is_residential     | [boolean] |    √     |
+|       addresses        | [string]  |    √     |
+|          city          |  [array]  |    √     |
+| address_classification |  [array]  |    √     |
+|          name          | [string]  |    √     |
+|         phone          | [string]  |    √     |
+|       attention        | [boolean] |    √     |
+|         email          | [string]  |    √     |
 
 
 ## Address Validation
@@ -48,10 +48,11 @@ email|[string]|√
 
 
 ### Header 
-Label	|Required|instruction
-:--:|:--:|:--:
-Api-Key	|Yes	|Api Key, please log in to the system and find it in My Profile
-Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
+
+|   Label    | Required |                         instruction                          |
+| :--------: | :------: | :----------------------------------------------------------: |
+|  Api-Key   |   Yes    | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   Yes    | Api Key, please log in to the system and find it in My Profile |
 
 ### Body 
 
@@ -70,14 +71,16 @@ Api-Secret	|Yes	|Api Key, please log in to the system and find it in My Profile
 
 **The address recognition API is currently designed to recognize the following types of entities:**
 
-Parameter|Type|Required
-:--:|:--:|:--:
-addresses|[array]|√
-city|[string]|√
-state_province_code|[string]|√
-postal_code|[string]|√
-country_code|[string]|√
-is_residential|[boolean]|√
+|      Parameter      |   Type    | Required |
+| :-----------------: | :-------: | :------: |
+|      addresses      |  [array]  |    √     |
+|        city         | [string]  |    √     |
+| state_province_code | [string]  |    √     |
+|     postal_code     | [string]  |    √     |
+|    country_code     | [string]  |    √     |
+|   is_residential    | [boolean] |    √     |
+
+
 
 
 ### Example Curl
@@ -103,26 +106,26 @@ curl -X POST  \
 
 **The address recognition API is currently designed to recognize the following types of entities:**
 
-Parameter|Type|Required
-:--:|:--:|:--:
-data|[object]|√
-status|[string]|√
-original_address|√
-postal_code|[string]|√
-country_code|[string]||√
-state_or_province_code|[string]|√
-is_residential|[boolean]|√
-addresses|[array]|√
-city|[string]|√
-address_classification|[string]|√
-is_residential|[string]|√
-matched_address|[object]|√
-postal_code|[string]|√
-country_code|[string]|√
-state_or_province_code|[string]|√
-is_residential|[boolean]|√
-addresses|[array]|√
-city|[string]|√
-address_classification|[string]|√
-status|[string]|√
+|       Parameter        |   Type    | Required |
+| :--------------------: | :-------: | :------: |
+|          data          | [object]  |    √     |
+|         status         | [string]  |    √     |
+|    original_address    |     √     |          |
+|      postal_code       | [string]  |    √     |
+|      country_code      | [string]  |          |
+| state_or_province_code | [string]  |    √     |
+|     is_residential     | [boolean] |    √     |
+|       addresses        |  [array]  |    √     |
+|          city          | [string]  |    √     |
+| address_classification | [string]  |    √     |
+|     is_residential     | [string]  |    √     |
+|    matched_address     | [object]  |    √     |
+|      postal_code       | [string]  |    √     |
+|      country_code      | [string]  |    √     |
+| state_or_province_code | [string]  |    √     |
+|     is_residential     | [boolean] |    √     |
+|       addresses        |  [array]  |    √     |
+|          city          | [string]  |    √     |
+| address_classification | [string]  |    √     |
+|         status         | [string]  |    √     |
 
