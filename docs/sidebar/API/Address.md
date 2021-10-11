@@ -88,7 +88,15 @@ curl -X POST  \
   -H 'Content-Type:application/json' \
   -H 'Api-Key:2cn1wgmfidytin3jef3b' \
   -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C' \
-  -d '{"addresses":["5353 W Imperial Hwy Unit 900"],"city":"Los Angeles","state_province_code":"CA","postal_code":"90045","country_code":"US"}'
+  -d '{
+    "addresses": [
+        "5353 W Imperial Hwy Unit 900"
+    ],
+    "city": "Los Angeles",
+    "state_province_code": "CA",
+    "postal_code": "90045",
+    "country_code": "US"
+}'
 ```
 
 ### Entity Types

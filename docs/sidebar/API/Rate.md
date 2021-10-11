@@ -20,7 +20,43 @@ curl -X POST  \
   -H 'Content-Type:application/json' \
   -H 'Api-Key:2cn1wgmfidytin3jef3b' \
   -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C' \
-  -d '{"shipment":{"ship_from":{"postal_code":"90045-6275","country_code":"US","state_or_province_code":"CA","city":"LOS ANGELES"},"ship_to":{"city":"Penfield","state_province_code":"NY","postal_code":"14526","country_code":"US"},"packages":[{"dimension":{"width":10,"height":10,"length":10,"code":"IN"},"weight":{"code":"lb","value":20},"confirmation":"None","quantity":1}],"package_type":{"type":"common","name":"Package"},"pickup_date":"20211010"}}'
+  -d '{
+    "shipment": {
+        "ship_from": {
+            "postal_code": "90045-6275",
+            "country_code": "US",
+            "state_or_province_code": "CA",
+            "city": "LOS ANGELES"
+        },
+        "ship_to": {
+            "city": "Penfield",
+            "state_province_code": "NY",
+            "postal_code": "14526",
+            "country_code": "US"
+        },
+        "packages": [
+            {
+                "dimension": {
+                    "width": 10,
+                    "height": 10,
+                    "length": 10,
+                    "code": "IN"
+                },
+                "weight": {
+                    "code": "lb",
+                    "value": 20
+                },
+                "confirmation": "None",
+                "quantity": 1
+            }
+        ],
+        "package_type": {
+            "type": "common",
+            "name": "Package"
+        },
+        "pickup_date": "20211010"
+    }
+}'
 ```
 
 
