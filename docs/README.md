@@ -9,33 +9,6 @@ features:
   details: Validate addresses, shop rates and print labels — and save time.
 - title: Save on shipping costs
   details: Take advantage of our steep carrier discounts or bring your own rates.
-footer: "by Adber"
+footer: "© 2021 Shipber. All rights reserved."
 ---
-
-### Product introduction
-
-
-
-<div style="display:flex;justify-content: space-between;padding-bottom:40px;margin-top:60px">
-  <div style="display: flex;flex-direction: column;align-items: center;">
-    <img style="width:100px" src="https://www.shipber.com/assets/img/Home/Repricing%20strategy.png" alt="Logistics Price Comparison">
-    <p style="margin-top:20px">Logistics Price Comparison</p>
-    <!-- <p style="margin:0px;font-size: 12px;color:#666">Consistency</p> -->
-  </div>
-  <div style="display: flex;flex-direction: column;align-items: center;">
-    <img style="width:100px" src="https://www.shipber.com/assets/img/Home/Order%20management.png" alt="Order Management">
-    <p style="mmargin-top:20px">Order Management</p>
-    <!-- <p style="margin:0px;font-size: 12px;color:#666"> Feedback</p> -->
-  </div>
-  <div style="display: flex;flex-direction: column;align-items: center;">
-    <img style="width:100px" src="https://www.shipber.com/assets/img/Home/Real-%20Time%20tracking.png" alt="Real-Time Tracking">
-    <p style="margin-top:20px">Real-Time Tracking</p>
-    <!-- <p style="margin:0px;font-size: 12px;color:#666">Efficiency</p> -->
-  </div>
-  <div style="display: flex;flex-direction: column;align-items: center;">
-    <img style="width:100px" src="https://www.shipber.com/assets/img/Home/Automated%20warehouse.png" alt="Automated Workflow">
-    <p style="margin-top:20px">Automated Workflow</p>
-    <!-- <p style="margin:0px;font-size: 12px;color:#666">Controllability</p> -->
-  </div>
-</div>
 
