@@ -6,66 +6,64 @@
 
 ### Header 
 
-|   Label    | Required |                         instruction                          |
+|   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
 |  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
 
 ### Entity Types
 
 **The address recognition API is currently designed to recognize the following types of entities:**
-|        Parameter        |   Type    | Required | Description                                                  | Example                                                  |
-| :--------------------- | :-------: | :------: | ------------------------------------------------------------ | -------------------------------------------------------- |
-|         rate_id         | [string]  |    √     | Service unique id                                            | eyJjaGFpbklkIjo0NDUsInNlcnZpY2VDb2RlIjoidXBzX2dyb3VuZCJ9 |
-|    custom_order_num     | [string]  |    √     |                                                              | cimy-123456789123456789                                  |
-|        shipment         | [object]  |    √     |                                                              |                                                          |
-|     ﹂service_code      | [string]  |          |                                                              | ups_ground                                               |
-|       ﹂ship_from       | [object]  |    √     |                                                              |                                                          |
-|        ﹂﹂uuid         | [string]  |    √     | Address unique id                                            |                                                          |
-|        ﹂﹂city         | [string]  |    √     |                                                              | LOS ANGELES                                              |
-|        ﹂﹂name         | [object]  |    √     | Company name or sender name                                  | Test Company                                             |
-|        ﹂﹂email        | [string]  |          |                                                              | 123456@gmail.com                                         |
-|      ﹂﹂addresses      |  [array]  |    √     |                                                              | ["5353 W IMPERIAL HWY STE 900"]                          |
-|     ﹂﹂postal_code     | [string]  |    √     |                                                              | 90045-6275                                               |
-|    ﹂﹂country_code     | [string]  |    √     |                                                              | US                                                       |
-|   ﹂﹂is_residential    | [boolean] |          | If you send true,this address is residintial.If you send false,this address is commercial | false                                                    |
-| ﹂﹂state_province_code | [string]  |    √     | State shortcode                                              | CA                                                       |
-|        ﹂﹂phone        | [string]  |    √     |                                                              | 0123456789                                               |
-|      ﹂﹂attention      | [string]  |          | Sender's name or notes                                       |                                                          |
-|        ﹂ship_to        | [object]  |    √     |                                                              |                                                          |
-|        ﹂﹂city         | [string]  |    √     |                                                              | Los Angeles                                              |
-|        ﹂﹂name         | [string]  |    √     | Company name or recipient name                               | Test Company                                             |
-|        ﹂﹂email        | [string]  |          |                                                              | 123456@gmail.com                                         |
-|      ﹂﹂addresses      |  [array]  |    √     |                                                              | ["5353 W Imperial Hwy Unit 900"]                         |
-|     ﹂﹂postal_code     | [string]  |    √     |                                                              | 90045                                                    |
-|    ﹂﹂country_code     | [string]  |    √     |                                                              | US                                                       |
-|   ﹂﹂is_residential    | [boolean] |          |                                                              | true                                                     |
-| ﹂﹂state_province_code | [string]  |    √     | State shortcode                                              | CA                                                       |
-|        ﹂﹂phone        | [string]  |    √     |                                                              | 0123456789                                               |
-|      ﹂﹂attention      | [string]  |          | Recipient name or remarks                                    | abc                                                      |
-|       ﹂packages        |  [array]  |    √     |                                                              |                                                          |
-|      ﹂﹂dimension      | [object]  |    √     |                                                              |                                                          |
-|       ﹂﹂﹂width       | [number]  |    √     |                                                              | 7                                                        |
-|      ﹂﹂﹂height       | [number]  |    √     |                                                              | 13                                                       |
-|      ﹂﹂﹂length       | [number]  |    √     |                                                              | 4                                                        |
-|       ﹂﹂﹂code        | [string]  |    √     | Dimension unit                                                    | IN                                                       |
-|       ﹂﹂weight        | [object]  |    √     |                                                              |                                                          |
-|       ﹂﹂﹂code        | [string]  |    √     | Weight unit                                                  | lb                                                       |
-|       ﹂﹂﹂value       | [number]  |    √     | Weight                                                       | 6                                                        |
-|    ﹂﹂confirmation     | [string]  |    √     |                                                              | None                                                     |
-|      ﹂﹂insurance      | [object]  |          |                                                              |                                                          |
-|       ﹂﹂﹂code        | [string]  |          | Currency type                                                | USD                                                      |
-|       ﹂﹂﹂value       | [number]  |          | Cost                                                         | 20                                                       |
-|      ﹂﹂quantity       | [number]  |    √     |                                                              | 1                                                        |
-|  ﹂﹂reference_numbers  |  [array]  |    √     |                                                              |                                                          |
-|       ﹂﹂﹂code        | [string]  |    √     |                                                              |                                                          |
-|       ﹂﹂﹂value       | [object]  |    √     |                                                              | 1                                                        |
-|     ﹂package_type      | [object]  |    √     |                                                              |                                                          |
-|        ﹂﹂type         | [string]  |    √     |                                                              | common                                                   |
-|        ﹂﹂name         | [string]  |    √     |                                                              | Package                                                  |
-|      ﹂pickup_date      | [string]  |    √     |                                                              | 20210416                                                 |
-
-
+| Parameter               |   Type    | Required | Description                                                  |
+| :---------------------- | :-------: | :------: | ------------------------------------------------------------ |
+| rate_id                 | [string]  |    √     | Service unique id                                            |
+| custom_order_num        | [string]  |    √     | -                                                            |
+| shipment                | [object]  |    √     | -                                                            |
+| ﹂service_code          | [string]  |          | -                                                            |
+| ﹂ship_from             | [object]  |    √     | -                                                            |
+| ﹂﹂uuid                | [string]  |    √     | Address unique id                                            |
+| ﹂﹂city                | [string]  |    √     | -                                                            |
+| ﹂﹂name                | [object]  |    √     | Company name or sender name                                  |
+| ﹂﹂email               | [string]  |          | -                                                            |
+| ﹂﹂addresses           |  [array]  |    √     | -                                                            |
+| ﹂﹂postal_code         | [string]  |    √     | -                                                            |
+| ﹂﹂country_code        | [string]  |    √     | -                                                            |
+| ﹂﹂is_residential      | [boolean] |          | If you send true,this address is residintial.If you send false,this address is commercial |
+| ﹂﹂state_province_code | [string]  |    √     | State shortcode                                              |
+| ﹂﹂phone               | [string]  |    √     | -                                                            |
+| ﹂﹂attention           | [string]  |          | Sender's name or notes                                       |
+| ﹂ship_to               | [object]  |    √     | -                                                            |
+| ﹂﹂city                | [string]  |    √     | -                                                            |
+| ﹂﹂name                | [string]  |    √     | Company name or recipient name                               |
+| ﹂﹂email               | [string]  |          | -                                                            |
+| ﹂﹂addresses           |  [array]  |    √     | -                                                            |
+| ﹂﹂postal_code         | [string]  |    √     | -                                                            |
+| ﹂﹂country_code        | [string]  |    √     | -                                                            |
+| ﹂﹂is_residential      | [boolean] |          | -                                                            |
+| ﹂﹂state_province_code | [string]  |    √     | State shortcode                                              |
+| ﹂﹂phone               | [string]  |    √     |                                                              |
+| ﹂﹂attention           | [string]  |          | Recipient name or remarks                                    |
+| ﹂packages              |  [array]  |    √     | -                                                            |
+| ﹂﹂dimension           | [object]  |    √     | -                                                            |
+| ﹂﹂﹂width             | [number]  |    √     | -                                                            |
+| ﹂﹂﹂height            | [number]  |    √     | -                                                            |
+| ﹂﹂﹂length            | [number]  |    √     | -                                                            |
+| ﹂﹂﹂code              | [string]  |    √     | Dimension unit                                               |
+| ﹂﹂weight              | [object]  |    √     |                                                              |
+| ﹂﹂﹂code              | [string]  |    √     | Weight unit                                                  |
+| ﹂﹂﹂value             | [number]  |    √     | Weight                                                       |
+| ﹂﹂confirmation        | [string]  |    √     | -                                                            |
+| ﹂﹂insurance           | [object]  |          | -                                                            |
+| ﹂﹂﹂code              | [string]  |          | Currency type                                                |
+| ﹂﹂﹂value             | [number]  |          | Cost                                                         |
+| ﹂﹂quantity            | [number]  |    √     | -                                                            |
+| ﹂﹂reference_numbers   |  [array]  |    √     | -                                                            |
+| ﹂﹂﹂code              | [string]  |    √     | -                                                            |
+| ﹂﹂﹂value             | [object]  |    √     | -                                                            |
+| ﹂package_type          | [object]  |    √     | -                                                            |
+| ﹂﹂type                | [string]  |    √     | -                                                            |
+| ﹂﹂name                | [string]  |    √     | -                                                            |
+| ﹂pickup_date           | [string]  |    √     | -                                                            |
 ### Example Curl
 
 ```json
@@ -190,10 +188,10 @@ curl -X POST  \
 
 ### Header 
 
-|   Label    | Required |                         instruction                          |
+|   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
 |  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
 
 
 
@@ -207,7 +205,7 @@ custom_order_num	|[string]	|√
 ```json
 curl -X GET  \
   'https://api.sandbox.shipber.app/v1/open-api/label?custom_order_num=cimy-977885' \
-  -H 'Content-Type:application/x-www-form-urlencoded' \
+  -H 'Content-Type:application/json' \
   -H 'Api-Key:2cn1wgmfidytin3jef3b' \
   -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C'
 ```
@@ -251,10 +249,10 @@ curl -X GET  \
 
 ### Header 
 
-|   Label    | Required |                         instruction                          |
+|   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
 |  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
 
 ### Entity Types
 

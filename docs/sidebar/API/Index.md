@@ -33,13 +33,13 @@ Other than the API-key and API-secret, everything else is the same. So you can e
 ### Differences in Behavior
 Our sandbox environment matches the production environment as much as possible, but there are a few differences to be aware of:
 
-### Limited Parcel Carriers
+#### Limited Parcel Carriers
 We currently only support the three major US parcel carriers -- UPS, FedEx, Pitney Bowes and USPS (Stamps.com). Other carriers will be added in the future, including international carriers.However, in the sandbox environment, the account only provides three services: FedEx Ground, FedEx Home Delivery and UPS Ground for testing.Rates
 
-### Rates
+#### Rates
 The shipping rates that you get in the sandbox may not match the rates that you get in production. Any negotiated rate discounts that you have are not applied in the sandbox, and some rates are "dummy" rates to prevent abuse of our sandbox for production purposes.
 
-### Test Labels
+#### Test Labels
 Created in the sandbox environment with multiple Labels per shipment or one Label per shipment, because in fact printing the label will incur costs,  we set up a test label for download,so the printed labels are all the same label
 
 

@@ -7,16 +7,16 @@
 
 ### Header 
 
-|   Label    | Required |                         instruction                          |
+|   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
 |  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
 
 ### Example Curl
 ```json
 curl -X GET  \
   'https://api.sandbox.shipber.app/v1/open-api/ship-from' \
-  -H 'Content-Type:application/x-www-form-urlencoded' \
+  -H 'Content-Type:application/json' \ 
   -H 'Api-Key:2cn1wgmfidytin3jef3b' \
   -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C'
 ```
@@ -49,24 +49,26 @@ curl -X GET  \
 
 ### Header 
 
-|   Label    | Required |                         instruction                          |
+|   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
 |  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
 
 
 ### Entity Types
 
 **The address recognition API is currently designed to recognize the following types of entities:**
 
-|      Parameter      |   Type    | Required | Description                                                  | Example                          |
-| :-----------------: | :-------: | :------: | ------------------------------------------------------------ | -------------------------------- |
-|      addresses      |  [array]  |    √     |                                                              | ["5353 W Imperial Hwy Unit 900"] |
-|        city         | [string]  |    √     |                                                              | Los Angeles                      |
-| state_province_code | [string]  |    √     | State shortcode                                              | CA                               |
-|     postal_code     | [string]  |    √     |                                                              | 90045                            |
-|    country_code     | [string]  |    √     |                                                              | US                               |
-|   is_residential    | [boolean] |    √     | If you send true,this address is residintial.If you send false,this address is commercial | true                             |
+|      Parameter      |   Type    | Required | Description                                                  |
+| :-----------------: | :-------: | :------: | ------------------------------------------------------------ |
+|      addresses      |  [array]  |    √     | -                                                            |
+|        city         | [string]  |    √     | -                                                            |
+| state_province_code | [string]  |    √     | State shortcode                                              |
+|     postal_code     | [string]  |    √     | -                                                            |
+|    country_code     | [string]  |    √     | -                                                            |
+|   is_residential    | [boolean] |    √     | If you send true,this address is residintial.If you send false,this address is commercial |
+
+
 
 
 

@@ -6,10 +6,10 @@
 
 ### Header 
 
-|   Label    | Required |                         instruction                          |
+|   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
 |  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
 
 
 
@@ -57,7 +57,7 @@ curl -X GET  \
 |   Label    | Required |                         instruction                          |
 | :--------: | :------: | :----------------------------------------------------------: |
 |  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
 
 
 ### Example Curl

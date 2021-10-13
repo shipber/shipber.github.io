@@ -5,10 +5,10 @@
 
 ### Header 
 
-|   Label    | Required |                         instruction                          |
+|   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
 |  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
 
 
 :::: tabs 
@@ -64,50 +64,49 @@ curl -X POST  \
 
 **The address recognition API is currently designed to recognize the following types of entities:**
 
-| Parameter                  |   Type    | Required | Description                                                  | Example                              |
-| :------------------------- | :-------: | :------: | ------------------------------------------------------------ | ------------------------------------ |
-| shipment                   | [object]  |    √     |                                                              |                                      |
-| ﹂service_code             | [string]  |          | Filter out the required services                             | ups_ground                           |
-| ﹂ship_from                | [object]  |          |                                                              |                                      |
-| ﹂﹂uuid                   |  [array]  |    √     | Address unique id                                            | 7b572b8d-08a3-4cc7-a711-1aae28e9ffcf |
-| ﹂﹂postal_code            | [string]  |    √     |                                                              | 90045-6275                           |
-| ﹂﹂country_code           | [string]  |    √     |                                                              | US                                   |
-| ﹂﹂state_or_province_code | [string]  |    √     | State shortcode                                              | CA                                   |
-| ﹂﹂is_residential         | [boolean] |          | If you send true,this address is residintial.If you send false,this address is commercial | false                                |
-| ﹂﹂addresses              |  [array]  |          |                                                              | ["5353 W IMPERIAL HWY STE 900"]      |
-| ﹂﹂city                   | [string]  |    √     |                                                              | LOS ANGELES                          |
-| ﹂﹂name                   | [string]  |          | Company name or sender name                                  | Test Company                         |
-| ﹂﹂phone                  | [boolean] |          |                                                              | 0123456789                           |
-| ﹂﹂attention              | [string]  |    √     | Sender's name or notes                                       | Tom                                  |
-| ﹂ship_to                  | [object]  |    √     |                                                              |                                      |
-| ﹂﹂addresses              |  [array]  |          |                                                              | ["200 Ymca Way #438"]                |
-| ﹂﹂city                   | [string]  |    √     |                                                              | Penfield                             |
-| ﹂﹂state_province_code    | [string]  |    √     | State shortcode                                              | NY                                   |
-| ﹂﹂postal_code            | [string]  |    √     |                                                              | 14526                                |
-| ﹂﹂country_code           | [string]  |    √     |                                                              | US                                   |
-| ﹂﹂name                   | [string]  |          |                                                              | 123456                               |
-| ﹂﹂phone                  | [string]  |          |                                                              | 1234567890                           |
-| ﹂﹂is_residential         | [boolean] |          |                                                              | false                                |
-| ﹂﹂attention              | [string]  |          | Recipient name or remarks                                    |                                      |
-| ﹂packages                 |  [array]  |    √     |                                                              |                                      |
-| ﹂﹂dimension              | [object]  |    √     |                                                              |                                      |
-| ﹂﹂﹂width                | [number]  |    √     |                                                              | 10                                   |
-| ﹂﹂﹂height               | [number]  |    √     |                                                              | 10                                   |
-| ﹂﹂﹂length               | [number]  |    √     |                                                              | 10                                   |
-| ﹂﹂﹂code                 | [string]  |    √     | Dimension unit                                               | IN                                   |
-| ﹂﹂weight                 | [object]  |    √     |                                                              |                                      |
-| ﹂﹂﹂code                 | [string]  |    √     | Weight unit                                                  | lb                                   |
-| ﹂﹂﹂value                | [number]  |    √     | Weight                                                       | 20                                   |
-| ﹂﹂insurance              | [object]  |          |                                                              |                                      |
-| ﹂﹂﹂code                 | [string]  |          | Currency type                                                | USD                                  |
-| ﹂﹂﹂value                | [number]  |          | Cost                                                         | 10                                   |
-| ﹂﹂confirmation           | [string]  |    √     |                                                              | None                                 |
-| ﹂﹂quantity               | [number]  |    √     |                                                              | 1                                    |
-| ﹂package_type             | [object]  |    √     |                                                              |                                      |
-| ﹂﹂type                   | [string]  |    √     |                                                              | common                               |
-| ﹂﹂name                   | [string]  |    √     |                                                              | Package                              |
-| ﹂pickup_date              | [string]  |    √     |                                                              | 20210416                             |
-
+| Parameter                  |   Type    | Required | Description                                                  |
+| :------------------------- | :-------: | :------: | ------------------------------------------------------------ |
+| shipment                   | [object]  |    √     | -                                                            |
+| ﹂service_code             | [string]  |          | Filter out the required services                             |
+| ﹂ship_from                | [object]  |          | -                                                            |
+| ﹂﹂uuid                   |  [array]  |    √     | Address unique id                                            |
+| ﹂﹂postal_code            | [string]  |    √     | -                                                            |
+| ﹂﹂country_code           | [string]  |    √     | -                                                            |
+| ﹂﹂state_or_province_code | [string]  |    √     | State shortcode                                              |
+| ﹂﹂is_residential         | [boolean] |          | If you send true,this address is residintial.If you send false,this address is commercial |
+| ﹂﹂addresses              |  [array]  |          | -                                                            |
+| ﹂﹂city                   | [string]  |    √     | -                                                            |
+| ﹂﹂name                   | [string]  |          | Company name or sender name                                  |
+| ﹂﹂phone                  | [boolean] |          | -                                                            |
+| ﹂﹂attention              | [string]  |    √     | Sender's name or notes                                       |
+| ﹂ship_to                  | [object]  |    √     | -                                                            |
+| ﹂﹂addresses              |  [array]  |          | -                                                            |
+| ﹂﹂city                   | [string]  |    √     | -                                                            |
+| ﹂﹂state_province_code    | [string]  |    √     | State shortcode                                              |
+| ﹂﹂postal_code            | [string]  |    √     | -                                                            |
+| ﹂﹂country_code           | [string]  |    √     | -                                                            |
+| ﹂﹂name                   | [string]  |          | -                                                            |
+| ﹂﹂phone                  | [string]  |          | -                                                            |
+| ﹂﹂is_residential         | [boolean] |          | -                                                            |
+| ﹂﹂attention              | [string]  |          | Recipient name or remarks                                    |
+| ﹂packages                 |  [array]  |    √     | -                                                            |
+| ﹂﹂dimension              | [object]  |    √     | -                                                            |
+| ﹂﹂﹂width                | [number]  |    √     | -                                                            |
+| ﹂﹂﹂height               | [number]  |    √     | -                                                            |
+| ﹂﹂﹂length               | [number]  |    √     | -                                                            |
+| ﹂﹂﹂code                 | [string]  |    √     | Dimension unit                                               |
+| ﹂﹂weight                 | [object]  |    √     | -                                                            |
+| ﹂﹂﹂code                 | [string]  |    √     | Weight unit                                                  |
+| ﹂﹂﹂value                | [number]  |    √     | Weight                                                       |
+| ﹂﹂insurance              | [object]  |          | -                                                            |
+| ﹂﹂﹂code                 | [string]  |          | Currency type                                                |
+| ﹂﹂﹂value                | [number]  |          | Cost                                                         |
+| ﹂﹂confirmation           | [string]  |    √     | -                                                            |
+| ﹂﹂quantity               | [number]  |    √     | -                                                            |
+| ﹂package_type             | [object]  |    √     | -                                                            |
+| ﹂﹂type                   | [string]  |    √     | -                                                            |
+| ﹂﹂name                   | [string]  |    √     | -                                                            |
+| ﹂pickup_date              | [string]  |    √     | -                                                            |
 :::
 
 ::: tab Response
@@ -137,27 +136,6 @@ curl -X POST  \
 ```
 
 
-### Entity Types
-
-**The address recognition API is currently designed to recognize the following types of entities:**
-
-|       Parameter       |   Type   | Required |
-| :-------------------: | :------: | :------: |
-|         data          | [object] |    √     |
-|         rates         | [array]  |    √     |
-|        charge         | [object] |    √     |
-|         code          | [string] |    √     |
-|         value         | [number] |    √     |
-|  estimate_ship_time   | [object] |    √     |
-|  delivery_time_to_tz  | [string] |    √     |
-| delivery_time_from_tz | [string] |    √     |
-|         days          | [number] |          |
-|        carrier        | [string] |    √     |
-|     service_code      | [string] |    √     |
-|     service_name      | [string] |    √     |
-|    carrier_service    | [string] |    √     |
-|     account_alias     | [string] |    √     |
-|        rate_id        | [string] |    √     |
 
 :::
 ::::
