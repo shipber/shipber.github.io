@@ -9,8 +9,8 @@
 
 |   Label    | Required |                         instruction                          |
 | :--------: | :------: | :----------------------------------------------------------: |
-|  Api-Key   |   Yes    | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   Yes    | Api Key, please log in to the system and find it in My Profile |
+|  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   √     | Api Key, please log in to the system and find it in My Profile |
 
 ### Example Curl
 ```json
@@ -21,26 +21,26 @@ curl -X GET  \
   -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C'
 ```
 
-### Entity Types
+### Response parameters
 
-**The address recognition API is currently designed to recognize the following types of entities:**
-
-|       Parameter        |   Type    | Required |
-| :--------------------: | :-------: | :------: |
-|          data          |  [array]  |    √     |
-|          uuid          | [string]  |    √     |
-|      postal_code       | [string]  |    √     |
-|      country_code      |  [array]  |    √     |
-| state_or_province_code | [string]  |    √     |
-|     is_residential     | [boolean] |    √     |
-|       addresses        | [string]  |    √     |
-|          city          |  [array]  |    √     |
-| address_classification |  [array]  |    √     |
-|          name          | [string]  |    √     |
-|         phone          | [string]  |    √     |
-|       attention        | [boolean] |    √     |
-|         email          | [string]  |    √     |
-
+```json
+{
+    "data": [{
+        "uuid": "22d953b7-24c4-4ae9-afb4-111cc227b01e",
+        "postal_code": "90045",
+        "country_code": "US",
+        "state_or_province_code": "CA",
+        "is_residential": false,
+        "addresses": ["5353 W Imperial Hwy Unit 900"],
+        "city": "Los Angeles",
+        "address_classification": "Commercial",
+        "name": "Amazon",
+        "phone": "0000000000",
+        "attention": "Tom",
+        "email": ""
+    }]
+}
+```
 
 ## Address Validation
 
@@ -51,34 +51,24 @@ curl -X GET  \
 
 |   Label    | Required |                         instruction                          |
 | :--------: | :------: | :----------------------------------------------------------: |
-|  Api-Key   |   Yes    | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   Yes    | Api Key, please log in to the system and find it in My Profile |
+|  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   √     | Api Key, please log in to the system and find it in My Profile |
 
-### Body 
-
-```json
-{
-    "addresses": ["5353 W Imperial Hwy Unit 900"],
-    "city": "Los Angeles",
-    "state_province_code": "CA",
-    "postal_code": "90045",
-    "country_code": "US",
-    "is_residential": true
-}
-```
 
 ### Entity Types
 
 **The address recognition API is currently designed to recognize the following types of entities:**
 
-|      Parameter      |   Type    | Required |
-| :-----------------: | :-------: | :------: |
-|      addresses      |  [array]  |    √     |
-|        city         | [string]  |    √     |
-| state_province_code | [string]  |    √     |
-|     postal_code     | [string]  |    √     |
-|    country_code     | [string]  |    √     |
-|   is_residential    | [boolean] |    √     |
+|      Parameter      |   Type    | Required | Description                                                  | Example                          |
+| :-----------------: | :-------: | :------: | ------------------------------------------------------------ | -------------------------------- |
+|      addresses      |  [array]  |    √     |                                                              | ["5353 W Imperial Hwy Unit 900"] |
+|        city         | [string]  |    √     |                                                              | Los Angeles                      |
+| state_province_code | [string]  |    √     | State shortcode                                              | CA                               |
+|     postal_code     | [string]  |    √     |                                                              | 90045                            |
+|    country_code     | [string]  |    √     |                                                              | US                               |
+|   is_residential    | [boolean] |    √     | If you send true,this address is residintial.If you send false,this address is commercial | true                             |
+
+
 
 
 
@@ -102,30 +92,31 @@ curl -X POST  \
 }'
 ```
 
-### Entity Types
+### Response parameters
 
-**The address recognition API is currently designed to recognize the following types of entities:**
-
-|       Parameter        |   Type    | Required |
-| :--------------------: | :-------: | :------: |
-|          data          | [object]  |    √     |
-|         status         | [string]  |    √     |
-|    original_address    |     √     |          |
-|      postal_code       | [string]  |    √     |
-|      country_code      | [string]  |          |
-| state_or_province_code | [string]  |    √     |
-|     is_residential     | [boolean] |    √     |
-|       addresses        |  [array]  |    √     |
-|          city          | [string]  |    √     |
-| address_classification | [string]  |    √     |
-|     is_residential     | [string]  |    √     |
-|    matched_address     | [object]  |    √     |
-|      postal_code       | [string]  |    √     |
-|      country_code      | [string]  |    √     |
-| state_or_province_code | [string]  |    √     |
-|     is_residential     | [boolean] |    √     |
-|       addresses        |  [array]  |    √     |
-|          city          | [string]  |    √     |
-| address_classification | [string]  |    √     |
-|         status         | [string]  |    √     |
-
+```json
+{
+    "data": {
+        "status": "Commercial",
+        "original_address": {
+            "postal_code": "90045",
+            "country_code": "US",
+            "state_or_province_code": "CA",
+            "is_residential": "",
+            "addresses": ["5353 W Imperial Hwy Unit 900"],
+            "city": "Los Angeles",
+            "address_classification": "Commercial"
+        },
+        "matched_address": {
+            "postal_code": "90045",
+            "country_code": "US",
+            "state_or_province_code": "CA",
+            "is_residential": false,
+            "addresses": ["5353 W Imperial Hwy Unit 900"],
+            "city": "Los Angeles",
+            "address_classification": "Commercial"
+        }
+    },
+    "status": ""
+}
+```
