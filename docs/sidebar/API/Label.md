@@ -8,62 +8,62 @@
 
 |   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
-|  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
+|  Api-Key   |   ✓     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   ✓     | Api Secret, please log in to the system and find it in My Profile |
 
 ### Entity Types
 
 **The address recognition API is currently designed to recognize the following types of entities:**
 | Parameter               |   Type    | Required | Description                                                  |
 | :---------------------- | :-------: | :------: | ------------------------------------------------------------ |
-| rate_id                 | [string]  |    √     | Service unique id                                            |
-| custom_order_num        | [string]  |    √     | -                                                            |
-| shipment                | [object]  |    √     | -                                                            |
+| rate_id                 | [string]  |    ✓     | Service unique id                                            |
+| custom_order_num        | [string]  |    ✓     | -                                                            |
+| shipment                | [object]  |    ✓     | -                                                            |
 | ﹂service_code          | [string]  |          | -                                                            |
-| ﹂ship_from             | [object]  |    √     | -                                                            |
-| ﹂﹂uuid                | [string]  |    √     | Address unique id                                            |
-| ﹂﹂city                | [string]  |    √     | -                                                            |
-| ﹂﹂name                | [object]  |    √     | Company name or sender name                                  |
+| ﹂ship_from             | [object]  |    ✓     | -                                                            |
+| ﹂﹂uuid                | [string]  |    ✓     | Address unique id                                            |
+| ﹂﹂city                | [string]  |    ✓     | -                                                            |
+| ﹂﹂name                | [object]  |    ✓     | Company name or sender name                                  |
 | ﹂﹂email               | [string]  |          | -                                                            |
-| ﹂﹂addresses           |  [array]  |    √     | -                                                            |
-| ﹂﹂postal_code         | [string]  |    √     | -                                                            |
-| ﹂﹂country_code        | [string]  |    √     | -                                                            |
+| ﹂﹂addresses           |  [array]  |    ✓     | -                                                            |
+| ﹂﹂postal_code         | [string]  |    ✓     | -                                                            |
+| ﹂﹂country_code        | [string]  |    ✓     | -                                                            |
 | ﹂﹂is_residential      | [boolean] |          | If you send true,this address is residintial.If you send false,this address is commercial |
-| ﹂﹂state_province_code | [string]  |    √     | State shortcode                                              |
-| ﹂﹂phone               | [string]  |    √     | -                                                            |
+| ﹂﹂state_province_code | [string]  |    ✓     | State shortcode                                              |
+| ﹂﹂phone               | [string]  |    ✓     | -                                                            |
 | ﹂﹂attention           | [string]  |          | Sender's name or notes                                       |
-| ﹂ship_to               | [object]  |    √     | -                                                            |
-| ﹂﹂city                | [string]  |    √     | -                                                            |
-| ﹂﹂name                | [string]  |    √     | Company name or recipient name                               |
+| ﹂ship_to               | [object]  |    ✓     | -                                                            |
+| ﹂﹂city                | [string]  |    ✓     | -                                                            |
+| ﹂﹂name                | [string]  |    ✓     | Company name or recipient name                               |
 | ﹂﹂email               | [string]  |          | -                                                            |
-| ﹂﹂addresses           |  [array]  |    √     | -                                                            |
-| ﹂﹂postal_code         | [string]  |    √     | -                                                            |
-| ﹂﹂country_code        | [string]  |    √     | -                                                            |
+| ﹂﹂addresses           |  [array]  |    ✓     | -                                                            |
+| ﹂﹂postal_code         | [string]  |    ✓     | -                                                            |
+| ﹂﹂country_code        | [string]  |    ✓     | -                                                            |
 | ﹂﹂is_residential      | [boolean] |          | -                                                            |
-| ﹂﹂state_province_code | [string]  |    √     | State shortcode                                              |
-| ﹂﹂phone               | [string]  |    √     |                                                              |
+| ﹂﹂state_province_code | [string]  |    ✓     | State shortcode                                              |
+| ﹂﹂phone               | [string]  |    ✓     |                                                              |
 | ﹂﹂attention           | [string]  |          | Recipient name or remarks                                    |
-| ﹂packages              |  [array]  |    √     | -                                                            |
-| ﹂﹂dimension           | [object]  |    √     | -                                                            |
-| ﹂﹂﹂width             | [number]  |    √     | -                                                            |
-| ﹂﹂﹂height            | [number]  |    √     | -                                                            |
-| ﹂﹂﹂length            | [number]  |    √     | -                                                            |
-| ﹂﹂﹂code              | [string]  |    √     | Dimension unit                                               |
-| ﹂﹂weight              | [object]  |    √     |                                                              |
-| ﹂﹂﹂code              | [string]  |    √     | Weight unit                                                  |
-| ﹂﹂﹂value             | [number]  |    √     | Weight                                                       |
-| ﹂﹂confirmation        | [string]  |    √     | -                                                            |
+| ﹂packages              |  [array]  |    ✓     | -                                                            |
+| ﹂﹂dimension           | [object]  |    ✓     | -                                                            |
+| ﹂﹂﹂width             | [number]  |    ✓     | -                                                            |
+| ﹂﹂﹂height            | [number]  |    ✓     | -                                                            |
+| ﹂﹂﹂length            | [number]  |    ✓     | -                                                            |
+| ﹂﹂﹂code              | [string]  |    ✓     | Dimension unit                                               |
+| ﹂﹂weight              | [object]  |    ✓     |                                                              |
+| ﹂﹂﹂code              | [string]  |    ✓     | Weight unit                                                  |
+| ﹂﹂﹂value             | [number]  |    ✓     | Weight                                                       |
+| ﹂﹂confirmation        | [string]  |    ✓     | -                                                            |
 | ﹂﹂insurance           | [object]  |          | -                                                            |
 | ﹂﹂﹂code              | [string]  |          | Currency type                                                |
 | ﹂﹂﹂value             | [number]  |          | Cost                                                         |
-| ﹂﹂quantity            | [number]  |    √     | -                                                            |
-| ﹂﹂reference_numbers   |  [array]  |    √     | -                                                            |
-| ﹂﹂﹂code              | [string]  |    √     | -                                                            |
-| ﹂﹂﹂value             | [object]  |    √     | -                                                            |
-| ﹂package_type          | [object]  |    √     | -                                                            |
-| ﹂﹂type                | [string]  |    √     | -                                                            |
-| ﹂﹂name                | [string]  |    √     | -                                                            |
-| ﹂pickup_date           | [string]  |    √     | -                                                            |
+| ﹂﹂quantity            | [number]  |    ✓     | -                                                            |
+| ﹂﹂reference_numbers   |  [array]  |    ✓     | -                                                            |
+| ﹂﹂﹂code              | [string]  |    ✓     | -                                                            |
+| ﹂﹂﹂value             | [object]  |    ✓     | -                                                            |
+| ﹂package_type          | [object]  |    ✓     | -                                                            |
+| ﹂﹂type                | [string]  |    ✓     | -                                                            |
+| ﹂﹂name                | [string]  |    ✓     | -                                                            |
+| ﹂pickup_date           | [string]  |    ✓     | -                                                            |
 ### Example Curl
 
 ```json
@@ -190,8 +190,8 @@ curl -X POST  \
 
 |   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
-|  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
+|  Api-Key   |   ✓     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   ✓     | Api Secret, please log in to the system and find it in My Profile |
 
 
 
@@ -199,7 +199,7 @@ curl -X POST  \
 
 Parameter Name	|Type|Required
 :--:|:--:|:--:
-custom_order_num	|[string]	|√ 
+custom_order_num	|[string]	|✓ 
 
 ### Example Curl
 ```json
@@ -251,8 +251,8 @@ curl -X GET  \
 
 |   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
-|  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
+|  Api-Key   |   ✓     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   ✓     | Api Secret, please log in to the system and find it in My Profile |
 
 ### Entity Types
 
@@ -260,7 +260,7 @@ curl -X GET  \
 
 | Parameter |   Type   | Required |
 | :-------: | :------: | :------: |
-| order_num | [string] |    √     |
+| order_num | [string] |    ✓     |
 
 
 ### Example Curl

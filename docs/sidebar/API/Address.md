@@ -9,8 +9,8 @@
 
 |   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
-|  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
+|  Api-Key   |   ✓     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   ✓     | Api Secret, please log in to the system and find it in My Profile |
 
 ### Example Curl
 ```json
@@ -51,8 +51,8 @@ curl -X GET  \
 
 |   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
-|  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
+|  Api-Key   |   ✓     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   ✓     | Api Secret, please log in to the system and find it in My Profile |
 
 
 ### Entity Types
@@ -61,12 +61,12 @@ curl -X GET  \
 
 |      Parameter      |   Type    | Required | Description                                                  |
 | :-----------------: | :-------: | :------: | ------------------------------------------------------------ |
-|      addresses      |  [array]  |    √     | -                                                            |
-|        city         | [string]  |    √     | -                                                            |
-| state_province_code | [string]  |    √     | State shortcode                                              |
-|     postal_code     | [string]  |    √     | -                                                            |
-|    country_code     | [string]  |    √     | -                                                            |
-|   is_residential    | [boolean] |    √     | If you send true,this address is residintial.If you send false,this address is commercial |
+|      addresses      |  [array]  |    ✓     | -                                                            |
+|        city         | [string]  |    ✓     | -                                                            |
+| state_province_code | [string]  |    ✓     | State shortcode                                              |
+|     postal_code     | [string]  |    ✓     | -                                                            |
+|    country_code     | [string]  |    ✓     | -                                                            |
+|   is_residential    | [boolean] |    ✓     | If you send true,this address is residintial.If you send false,this address is commercial |
 
 
 
