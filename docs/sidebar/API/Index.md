@@ -2,22 +2,23 @@
 
 ## Getting Started
 
-### Currently provided interface
+### Currently provided APIs
 
 + **Ship From List** <br>
-  Get available sender addresses
+  Getting available sender addresses
 
 
 + **Rate** <br>
-  One-click batch calculation of the rates of multiple logistics providers/services/accounts
+  You can estimate a rate by providing a subset of the information required to create a label. You can use this to allow customers to quickly compare rates across services, carriers, and more without having to fill in all the information required to create a label.
 + **Address validation** <br>
-  Address check interface
+  Provide you with an official address
 + **Shipping** <br>
   Create and customize shipping labels
-+ **Get Label** <br>
++ **Download Label** <br>
   Obtain Label information and convert the waybill created by Shipping into PDF format for printing
 + **Cancel** <br>
-  Waybill cancellation, cancel the waybill created by Shipping before
+  Cancel created label before Shipping
+
 
 
 
