@@ -7,8 +7,8 @@
 
 |   Label    | Required |                         Description                          |
 | :--------: | :------: | :----------------------------------------------------------: |
-|  Api-Key   |   √     | Api Key, please log in to the system and find it in My Profile |
-| Api-Secret |   √     | Api Secret, please log in to the system and find it in My Profile |
+|  Api-Key   |   ✓     | Api Key, please log in to the system and find it in My Profile |
+| Api-Secret |   ✓     | Api Secret, please log in to the system and find it in My Profile |
 
 
 :::: tabs 
@@ -66,6 +66,7 @@ curl -X POST  \
 
 | Parameter                  |   Type    | Required | Description                                                  |
 | :------------------------- | :-------: | :------: | ------------------------------------------------------------ |
+<<<<<<< HEAD
 | shipment                   | [object]  |    √     | -                                                            |
 | ﹂service_code             | [string]  |          | Filter out the required services.such as: ups_ground. If you want to screen another services.[Click here](./Service_Code.md) and send the service_code what you want to choice |
 | ﹂ship_from                | [object]  |          | -                                                            |
@@ -111,6 +112,49 @@ curl -X POST  \
 
 
 
+=======
+| shipment                   | [object]  |    ✓     | -                                                            |
+| ﹂service_code             | [string]  |          | Filter out the required services                             |
+| ﹂ship_from                | [object]  |          | -                                                            |
+| ﹂﹂uuid                   |  [array]  |    ✓     | Address unique id                                            |
+| ﹂﹂postal_code            | [string]  |    ✓     | -                                                            |
+| ﹂﹂country_code           | [string]  |    ✓     | -                                                            |
+| ﹂﹂state_or_province_code | [string]  |    ✓     | State shortcode                                              |
+| ﹂﹂is_residential         | [boolean] |          | If you send true,this address is residintial.If you send false,this address is commercial |
+| ﹂﹂addresses              |  [array]  |          | -                                                            |
+| ﹂﹂city                   | [string]  |    ✓     | -                                                            |
+| ﹂﹂name                   | [string]  |          | Company name or sender name                                  |
+| ﹂﹂phone                  | [boolean] |          | -                                                            |
+| ﹂﹂attention              | [string]  |    ✓     | Sender's name or notes                                       |
+| ﹂ship_to                  | [object]  |    ✓     | -                                                            |
+| ﹂﹂addresses              |  [array]  |          | -                                                            |
+| ﹂﹂city                   | [string]  |    ✓     | -                                                            |
+| ﹂﹂state_province_code    | [string]  |    ✓     | State shortcode                                              |
+| ﹂﹂postal_code            | [string]  |    ✓     | -                                                            |
+| ﹂﹂country_code           | [string]  |    ✓     | -                                                            |
+| ﹂﹂name                   | [string]  |          | -                                                            |
+| ﹂﹂phone                  | [string]  |          | -                                                            |
+| ﹂﹂is_residential         | [boolean] |          | -                                                            |
+| ﹂﹂attention              | [string]  |          | Recipient name or remarks                                    |
+| ﹂packages                 |  [array]  |    ✓     | -                                                            |
+| ﹂﹂dimension              | [object]  |    ✓     | -                                                            |
+| ﹂﹂﹂width                | [number]  |    ✓     | -                                                            |
+| ﹂﹂﹂height               | [number]  |    ✓     | -                                                            |
+| ﹂﹂﹂length               | [number]  |    ✓     | -                                                            |
+| ﹂﹂﹂code                 | [string]  |    ✓     | Dimension unit                                               |
+| ﹂﹂weight                 | [object]  |    ✓     | -                                                            |
+| ﹂﹂﹂code                 | [string]  |    ✓     | Weight unit                                                  |
+| ﹂﹂﹂value                | [number]  |    ✓     | Weight                                                       |
+| ﹂﹂insurance              | [object]  |          | -                                                            |
+| ﹂﹂﹂code                 | [string]  |          | Currency type                                                |
+| ﹂﹂﹂value                | [number]  |          | Cost                                                         |
+| ﹂﹂confirmation           | [string]  |    ✓     | -                                                            |
+| ﹂﹂quantity               | [number]  |    ✓     | -                                                            |
+| ﹂package_type             | [object]  |    ✓     | -                                                            |
+| ﹂﹂type                   | [string]  |    ✓     | -                                                            |
+| ﹂﹂name                   | [string]  |    ✓     | -                                                            |
+| ﹂pickup_date              | [string]  |    ✓     | -                                                            |
+>>>>>>> fc8f4dc4aa6c8255b961efc81cb13debbb6f78f1
 :::
 
 ::: tab Response
