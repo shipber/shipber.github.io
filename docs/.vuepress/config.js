@@ -1,4 +1,10 @@
 module.exports = {
+    head:[
+        [
+            'link',
+            {rel:'icon',href:'/images/logo.png'}
+        ]
+    ],
     title: 'Shipber API',
     description: ' ',
     themeConfig: {

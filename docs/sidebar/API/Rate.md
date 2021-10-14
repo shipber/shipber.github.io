@@ -67,46 +67,50 @@ curl -X POST  \
 | Parameter                  |   Type    | Required | Description                                                  |
 | :------------------------- | :-------: | :------: | ------------------------------------------------------------ |
 | shipment                   | [object]  |    √     | -                                                            |
-| ﹂service_code             | [string]  |          | Filter out the required services                             |
+| ﹂service_code             | [string]  |          | Filter out the required services.such as: ups_ground. If you want to screen another services.[Click here](./Service_Code.md) and send the service_code what you want to choice |
 | ﹂ship_from                | [object]  |          | -                                                            |
-| ﹂﹂uuid                   |  [array]  |    √     | Address unique id                                            |
-| ﹂﹂postal_code            | [string]  |    √     | -                                                            |
-| ﹂﹂country_code           | [string]  |    √     | -                                                            |
-| ﹂﹂state_or_province_code | [string]  |    √     | State shortcode                                              |
+| ﹂﹂uuid                   |  [array]  |          | Address unique id.If you want to improve the accuracy of the ship from address, you can choose to send only uuid.<br>such as:7b572b8d-08a3-4cc7-a711-1aae28e9ffcf |
+| ﹂﹂postal_code            | [string]  |    √     | Length:5-9                                                   |
+| ﹂﹂country_code           | [string]  |    √     | Length:2                                                     |
+| ﹂﹂state_or_province_code | [string]  |    √     | State shortcode.<br>Such as: CA<br/>Length:2                 |
 | ﹂﹂is_residential         | [boolean] |          | If you send true,this address is residintial.If you send false,this address is commercial |
-| ﹂﹂addresses              |  [array]  |          | -                                                            |
+| ﹂﹂addresses              |  [array]  |          | Length:1-35                                                  |
 | ﹂﹂city                   | [string]  |    √     | -                                                            |
-| ﹂﹂name                   | [string]  |          | Company name or sender name                                  |
-| ﹂﹂phone                  | [boolean] |          | -                                                            |
-| ﹂﹂attention              | [string]  |    √     | Sender's name or notes                                       |
+| ﹂﹂name                   | [string]  |          | Company name or sender name.<br>Length:1-35                  |
+| ﹂﹂phone                  | [boolean] |          | Length:10-15                                                 |
+| ﹂﹂attention              | [string]  |    √     | Sender's name or notes<br>Length:0-35                        |
 | ﹂ship_to                  | [object]  |    √     | -                                                            |
-| ﹂﹂addresses              |  [array]  |          | -                                                            |
+| ﹂﹂addresses              |  [array]  |          | Length:1-35                                                  |
 | ﹂﹂city                   | [string]  |    √     | -                                                            |
-| ﹂﹂state_province_code    | [string]  |    √     | State shortcode                                              |
-| ﹂﹂postal_code            | [string]  |    √     | -                                                            |
-| ﹂﹂country_code           | [string]  |    √     | -                                                            |
-| ﹂﹂name                   | [string]  |          | -                                                            |
-| ﹂﹂phone                  | [string]  |          | -                                                            |
-| ﹂﹂is_residential         | [boolean] |          | -                                                            |
-| ﹂﹂attention              | [string]  |          | Recipient name or remarks                                    |
+| ﹂﹂state_province_code    | [string]  |    √     | State shortcode.<br>Such as: CA<br/>Length:2                 |
+| ﹂﹂postal_code            | [string]  |    √     | Length:5-9                                                   |
+| ﹂﹂country_code           | [string]  |    √     | Length:2                                                     |
+| ﹂﹂name                   | [string]  |          | Company name or sender name.<br/>Length:1-35                 |
+| ﹂﹂phone                  | [string]  |          | Company name or sender name.<br/>Length:1-35                 |
+| ﹂﹂is_residential         | [boolean] |          | If you send true,this address is residintial.If you send false,this address is commercial |
+| ﹂﹂attention              | [string]  |          | Sender's name or notes<br/>Length:0-35                       |
 | ﹂packages                 |  [array]  |    √     | -                                                            |
 | ﹂﹂dimension              | [object]  |    √     | -                                                            |
 | ﹂﹂﹂width                | [number]  |    √     | -                                                            |
 | ﹂﹂﹂height               | [number]  |    √     | -                                                            |
 | ﹂﹂﹂length               | [number]  |    √     | -                                                            |
-| ﹂﹂﹂code                 | [string]  |    √     | Dimension unit                                               |
-| ﹂﹂weight                 | [object]  |    √     | -                                                            |
-| ﹂﹂﹂code                 | [string]  |    √     | Weight unit                                                  |
-| ﹂﹂﹂value                | [number]  |    √     | Weight                                                       |
+| ﹂﹂﹂code                 | [string]  |    √     | Dimension unit such as:IN,CM                                 |
+| ﹂﹂weight                 | [object]  |    √     |                                                              |
+| ﹂﹂﹂code                 | [string]  |    √     | Weight unit such as:LB,OZ,KG,G                               |
+| ﹂﹂﹂value                | [number]  |    √     | Weight<br>Min:0.1oz<br>Max:150lb                             |
 | ﹂﹂insurance              | [object]  |          | -                                                            |
 | ﹂﹂﹂code                 | [string]  |          | Currency type                                                |
 | ﹂﹂﹂value                | [number]  |          | Cost                                                         |
 | ﹂﹂confirmation           | [string]  |    √     | -                                                            |
-| ﹂﹂quantity               | [number]  |    √     | -                                                            |
+| ﹂﹂quantity               | [number]  |    √     | Min:1<br>Max:200                                             |
 | ﹂package_type             | [object]  |    √     | -                                                            |
-| ﹂﹂type                   | [string]  |    √     | -                                                            |
-| ﹂﹂name                   | [string]  |    √     | -                                                            |
+| ﹂﹂type                   | [string]  |    √     | Such as:common                                               |
+| ﹂﹂name                   | [string]  |    √     | Such as:Package                                              |
 | ﹂pickup_date              | [string]  |    √     | -                                                            |
+
+
+
+
 :::
 
 ::: tab Response
