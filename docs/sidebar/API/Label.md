@@ -16,7 +16,6 @@
 **The address recognition API is currently designed to recognize the following types of entities:**
 | Parameter               |   Type    | Required | Description                                                  |
 | :---------------------- | :-------: | :------: | ------------------------------------------------------------ |
-<<<<<<< HEAD
 | rate_id                 | [string]  |    √     | Service unique id.<br>Such as:eyJjaGFpbklkIjo0NDUsInNlcnZpY2VDb2RlIjoidXBzX2dyb3VuZCJ9 |
 | custom_order_num        | [string]  |    √     | -                                                            |
 | shipment                | [object]  |    √     | -                                                            |
@@ -66,56 +65,7 @@
 | ﹂﹂name                | [string]  |    √     | Such as:Package                                              |
 | ﹂pickup_date           | [string]  |    √     | -                                                            |
 
-=======
-| rate_id                 | [string]  |    ✓     | Service unique id                                            |
-| custom_order_num        | [string]  |    ✓     | -                                                            |
-| shipment                | [object]  |    ✓     | -                                                            |
-| ﹂service_code          | [string]  |          | -                                                            |
-| ﹂ship_from             | [object]  |    ✓     | -                                                            |
-| ﹂﹂uuid                | [string]  |    ✓     | Address unique id                                            |
-| ﹂﹂city                | [string]  |    ✓     | -                                                            |
-| ﹂﹂name                | [object]  |    ✓     | Company name or sender name                                  |
-| ﹂﹂email               | [string]  |          | -                                                            |
-| ﹂﹂addresses           |  [array]  |    ✓     | -                                                            |
-| ﹂﹂postal_code         | [string]  |    ✓     | -                                                            |
-| ﹂﹂country_code        | [string]  |    ✓     | -                                                            |
-| ﹂﹂is_residential      | [boolean] |          | If you send true,this address is residintial.If you send false,this address is commercial |
-| ﹂﹂state_province_code | [string]  |    ✓     | State shortcode                                              |
-| ﹂﹂phone               | [string]  |    ✓     | -                                                            |
-| ﹂﹂attention           | [string]  |          | Sender's name or notes                                       |
-| ﹂ship_to               | [object]  |    ✓     | -                                                            |
-| ﹂﹂city                | [string]  |    ✓     | -                                                            |
-| ﹂﹂name                | [string]  |    ✓     | Company name or recipient name                               |
-| ﹂﹂email               | [string]  |          | -                                                            |
-| ﹂﹂addresses           |  [array]  |    ✓     | -                                                            |
-| ﹂﹂postal_code         | [string]  |    ✓     | -                                                            |
-| ﹂﹂country_code        | [string]  |    ✓     | -                                                            |
-| ﹂﹂is_residential      | [boolean] |          | -                                                            |
-| ﹂﹂state_province_code | [string]  |    ✓     | State shortcode                                              |
-| ﹂﹂phone               | [string]  |    ✓     |                                                              |
-| ﹂﹂attention           | [string]  |          | Recipient name or remarks                                    |
-| ﹂packages              |  [array]  |    ✓     | -                                                            |
-| ﹂﹂dimension           | [object]  |    ✓     | -                                                            |
-| ﹂﹂﹂width             | [number]  |    ✓     | -                                                            |
-| ﹂﹂﹂height            | [number]  |    ✓     | -                                                            |
-| ﹂﹂﹂length            | [number]  |    ✓     | -                                                            |
-| ﹂﹂﹂code              | [string]  |    ✓     | Dimension unit                                               |
-| ﹂﹂weight              | [object]  |    ✓     |                                                              |
-| ﹂﹂﹂code              | [string]  |    ✓     | Weight unit                                                  |
-| ﹂﹂﹂value             | [number]  |    ✓     | Weight                                                       |
-| ﹂﹂confirmation        | [string]  |    ✓     | -                                                            |
-| ﹂﹂insurance           | [object]  |          | -                                                            |
-| ﹂﹂﹂code              | [string]  |          | Currency type                                                |
-| ﹂﹂﹂value             | [number]  |          | Cost                                                         |
-| ﹂﹂quantity            | [number]  |    ✓     | -                                                            |
-| ﹂﹂reference_numbers   |  [array]  |    ✓     | -                                                            |
-| ﹂﹂﹂code              | [string]  |    ✓     | -                                                            |
-| ﹂﹂﹂value             | [object]  |    ✓     | -                                                            |
-| ﹂package_type          | [object]  |    ✓     | -                                                            |
-| ﹂﹂type                | [string]  |    ✓     | -                                                            |
-| ﹂﹂name                | [string]  |    ✓     | -                                                            |
-| ﹂pickup_date           | [string]  |    ✓     | -                                                            |
->>>>>>> fc8f4dc4aa6c8255b961efc81cb13debbb6f78f1
+
 ### Example Curl
 
 ```json
