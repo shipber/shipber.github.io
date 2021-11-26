@@ -22,6 +22,7 @@
       >
         {{ data.tagline || $description || 'Welcome to your VuePress site' }}
       </p>
+      <a class="action-button" href="/sidebar/API/">START HERE</a>
 
       <p
         v-if="data.actionText && data.actionLink"
@@ -100,7 +101,7 @@ export default {
     h1, .description, .action
       margin 1.8rem auto
     .description
-      max-width 35rem
+      max-width 55rem
       font-size 1.6rem
       line-height 1.3
       color lighten($textColor, 40%)
@@ -109,7 +110,7 @@ export default {
       font-size 1.2rem
       color #fff
       background-color $accentColor
-      padding 0.8rem 1.6rem
+      padding 0.8remS 1.6rem
       border-radius 4px
       transition background-color .1s ease
       box-sizing border-box
