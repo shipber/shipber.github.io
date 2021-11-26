@@ -110,7 +110,7 @@ export default {
       font-size 1.2rem
       color #fff
       background-color $accentColor
-      padding 0.8remS 1.6rem
+      padding 0.8rem 1.6rem
       border-radius 4px
       transition background-color .1s ease
       box-sizing border-box
