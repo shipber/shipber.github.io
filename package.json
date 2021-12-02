@@ -1,7 +1,7 @@
 {
   "name": "vuepress-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. Git Clone 本项目 2. 切换至 source 分支 3. 在 Docs 里面编写相关 markdown 文档 4. 编写完成后，需要将项目部署至线上，在根目录执行：    ```shell       sh deploy.sh     ``` 5. 访问： shipber.github.io 项目即可。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "lite-server": "^2.6.1",
     "vuepress": "^1.8.2",
     "vuepress-plugin-element-tabs": "^0.2.8",
     "vuepress-plugin-one-click-copy": "^1.0.6"

@@ -2,15 +2,14 @@ module.exports = {
     head:[
         [
             'link',
-            {rel:'icon',href:'/images/logo.png'}
+            {rel:'icon',href:'/images/logo.svg'}
         ]
     ],
     title: 'Shipber Open API Docs',
     description: 'The API is a great way to get data directly to and from Shipber, like creating shipments, updating products, and querying order, shipment and customer data.',
     themeConfig: {
-        logo: '/images/logo.png',
+        logo: '/images/logo.svg',
         nav: [
-            {text: 'Documents', link: '/sidebar/API/'},
         ],
         sidebar: {
             '/sidebar/API/': [

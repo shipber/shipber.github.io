@@ -22,7 +22,8 @@
       >
         {{ data.tagline || $description || 'Welcome to your VuePress site' }}
       </p>
-      <a class="action-button" href="/sidebar/API/">START HERE</a>
+      <a class="action-button" style="border:1px solid #4097fd; color:#4097fd; background-color:#fff; margin-right:20px" href="https://www.eolink.com/share/project/doc/detail?groupID=-1&pageID=462106&shareCode=ThbTzJ&shareToken=$2y$10$AsG~2FC8EqCf2K2dfN97SjvODik6pw03UPxvcuHkabUv~2FE6cHx2fL8S&shareID=298424">Chinese</a>
+      <a class="action-button" href="/sidebar/API/">English</a>
 
       <p
         v-if="data.actionText && data.actionLink"
@@ -102,7 +103,7 @@ export default {
       margin 1.8rem auto
     .description
       max-width 55rem
-      font-size 1.6rem
+      font-size 20px
       line-height 1.3
       color lighten($textColor, 40%)
     .action-button
