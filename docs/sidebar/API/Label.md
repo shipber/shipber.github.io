@@ -42,6 +42,7 @@
 | ﹂﹂is_residential      | [boolean] |          | If you send true,this address is residintial.If you send false,this address is commercial |
 | ﹂﹂state_province_code | [string]  |    √     | State shortcode.<br/>Such as: CA<br/>Length:2                |
 | ﹂﹂phone               | [string]  |    √     | Company name or sender name.<br/>Length:1-35                 |
+| ﹂﹂phone.ext              | [string]  |         |Length:1-4                 |
 | ﹂﹂attention           | [string]  |          | Sender's name or notes<br/>Length:0-35                       |
 | ﹂packages              |  [array]  |    √     | -                                                            |
 | ﹂﹂dimension           | [object]  |    √     | -                                                            |
