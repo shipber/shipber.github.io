@@ -17,7 +17,7 @@
 
 ```json
 curl -X GET  \
-  'https://api.sandbox.shipber.app/v1/open-api/user/shipping-services' \
+  'https://api.sandbox.shipber.com/v1/open-api/user/shipping-services' \
   -H 'Content-Type:application/x-www-form-urlencoded' \
   -H 'Api-Key:2cn1wgmfidytin3jef3b' \
   -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C'
@@ -64,7 +64,7 @@ curl -X GET  \
 
 ```json
 curl -X GET  \
-  'https://api.sandbox.shipber.app/v1/open-api/user' \
+  'https://api.sandbox.shipber.com/v1/open-api/user' \
   -H 'Content-Type:application/x-www-form-urlencoded' \
   -H 'Api-Key:2cn1wgmfidytin3jef3b' \
   -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C'

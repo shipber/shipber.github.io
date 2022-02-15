@@ -71,7 +71,7 @@
 
 ```json
 curl -X POST  \
-  'https://api.sandbox.shipber.app/v1/open-api/label' \
+  'https://api.sandbox.shipber.com/v1/open-api/label' \
   -H 'Content-Type:application/json' \
   -H 'Api-Key:2cn1wgmfidytin3jef3b' \
   -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C' \
@@ -207,7 +207,7 @@ custom_order_num	|[string]	|✓
 ### Example Curl
 ```json
 curl -X GET  \
-  'https://api.sandbox.shipber.app/v1/open-api/label?custom_order_num=cimy-977885' \
+  'https://api.sandbox.shipber.com/v1/open-api/label?custom_order_num=cimy-977885' \
   -H 'Content-Type:application/json' \
   -H 'Api-Key:2cn1wgmfidytin3jef3b' \
   -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C'
@@ -269,7 +269,7 @@ curl -X GET  \
 ### Example Curl
 ```json
 curl -X POST  \
-  'https://api.sandbox.shipber.app/v1/open-api/label/cancel' \
+  'https://api.sandbox.shipber.com/v1/open-api/label/cancel' \
   -H 'Content-Type:application/json' \
   -H 'Api-Key:2cn1wgmfidytin3jef3b' \
   -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C' \
