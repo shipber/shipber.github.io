@@ -15,7 +15,7 @@
 ### Example Curl
 ```json
 curl -X GET  \
-  'https://api.sandbox.shipber.app/v1/open-api/ship-from' \
+  'https://api.sandbox.shipber.com/v1/open-api/ship-from' \
   -H 'Content-Type:application/json' \ 
   -H 'Api-Key:2cn1wgmfidytin3jef3b' \
   -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C'
@@ -79,7 +79,7 @@ curl -X GET  \
 
 ```json
 curl -X POST  \
-  'https://api.sandbox.shipber.app/v1/open-api/address/validate' \
+  'https://api.sandbox.shipber.com/v1/open-api/address/validate' \
   -H 'Content-Type:application/json' \
   -H 'Api-Key:2cn1wgmfidytin3jef3b' \
   -H 'Api-Secret:qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C' \

@@ -44,7 +44,7 @@ The shipping rates that you get in the sandbox may not match the rates that you 
 Created in the sandbox environment with multiple Labels per shipment or one Label per shipment, because in fact printing the label will incur costs,  we set up a test label for download,so the printed labels are all the same label
 
 
-### Test Environment: `https://api.sandbox.shipber.app` 
+### Test Environment: `https://api.sandbox.shipber.com` 
 
 <br>
 
