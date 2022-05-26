@@ -1,4 +1,4 @@
-| 服务商 | ups                                | fedex                                      | pb                                     | stamps                            |
+| carrier | ups                                | fedex                                      | pb                                     | stamps                            |
 | ------- | ---------------------------------- | ------------------------------------------ | -------------------------------------- | --------------------------------- |
 | service | ups_ground                         | fedex_ground                               | pitney_bowes_parcel_select             | stamps_usps_media_mail            |
 |         | ups_3_day_select                   | fedex_express_saver                        | pitney_bowes_parcel_select_lightweight | stamps_usps_priority_mail         |
@@ -16,4 +16,4 @@
 |         |                                    |                                            |                                        |                                   |
 
 <button style='height:30px;width:50px;background-color:#4f9ffd;
-};border: 1px solid white;' type="button" Onclick="window.history.back()">返回</button>
+};border: 1px solid white;' type="button" Onclick="window.history.back()">Back</button>

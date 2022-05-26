@@ -16,8 +16,16 @@ module.exports = {
                 '/sidebar/API/',
                 {
                     title: 'API',
+                    children: ['标签', '地址', '费率','个人信息'],
+                    collapsable: true
+                },
+            ],
+            '/sidebarEn/API/': [
+                '/sidebarEn/API/',
+                {
+                    title: 'API',
                     children: ['Information', 'Address', 'Rate','Label'],
-                    collapsable: false
+                    collapsable: true
                 },
             ],
         }

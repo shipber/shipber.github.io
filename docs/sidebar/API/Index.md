@@ -1,23 +1,23 @@
-# Overview
+# 介绍
 
-## Getting Started
+## 前言
 
-### Currently provided APIs
+### 目前提供的接口
 
 + **Ship From List** <br>
-  Getting available sender addresses
+  获取可用发件地址
 
 
 + **Rate** <br>
-  You can estimate a rate by providing a subset of the information required to create a label. You can use this to allow customers to quickly compare rates across services, carriers, and more without having to fill in all the information required to create a label.
+  一键批量运算多个物流商/服务/账号的费率
 + **Address validation** <br>
-  Provide you with an official address
+  地址校检接口
 + **Shipping** <br>
-  Create and customize shipping labels
+  创建和自定义货运标签
 + **Download Label** <br>
-  Obtain Label information and convert the waybill created by Shipping into PDF format for printing
+  获取Label信息，将Shipping 创建的运单，转成PDF 格式进行打印。
 + **Cancel** <br>
-  Cancel created label before Shipping
+  运单取消, 将之前 Shipping 创建的运单进行取消
 
 
 
@@ -25,30 +25,29 @@
 
 
 
-## Sandbox Environment 
+## 沙盒环境
 
-### How to Use the Sandbox
-We will provide you with API-key and API-secret dedicated to the sandbox environment for testing, which is also convenient for you to test without incurring real costs and real tracking information
-Other than the API-key and API-secret, everything else is the same. So you can easily test and develop your application in the sandbox and then when you're ready to go to production all you need to do is change the API key.
+### 如何使用沙盒
+我们将为您提供专门用于沙盒环境的API密钥和API secret进行测试，这也方便您进行测试，不会产生实际成本和实际跟踪信息，除了API密钥和API secret之外，其他一切都是一样的。因此，您可以在沙箱中轻松测试和开发应用程序，然后在准备投入生产时，只需更改API密钥即可。
 
-### Differences in Behavior
-Our sandbox environment matches the production environment as much as possible, but there are a few differences to be aware of:
+### 差异
+我们的沙箱环境尽可能与生产环境相匹配，但有一些差异需要注意：
 
-#### Limited Parcel Carriers
-We currently only support the three major US parcel carriers -- UPS, FedEx, Pitney Bowes and USPS (Stamps.com). Other carriers will be added in the future, including international carriers.However, in the sandbox environment, the account only provides three services: FedEx Ground, FedEx Home Delivery and UPS Ground for testing.Rates
+#### 有限包裹承运人
+我们目前只支持美国三大包裹运输公司——UPS、FedEx、PitneyBowes和USPS（Stamps.com）。未来将增加其他承运人，包括国际承运人。然而，在沙箱环境中，该帐户仅提供三项服务：联邦快递地面服务、联邦快递送货上门服务和UPS测试地面服务。费率
 
-#### Rates
-The shipping rates that you get in the sandbox may not match the rates that you get in production. Any negotiated rate discounts that you have are not applied in the sandbox, and some rates are "dummy" rates to prevent abuse of our sandbox for production purposes.
+#### 费率
+您在沙箱中获得的运费可能与您在生产中获得的运费不匹配。您没有在沙箱中应用任何协商的费率折扣，有些费率是“虚拟”费率，以防止我们的沙箱被滥用用于生产目的。
 
-#### Test Labels
-Created in the sandbox environment with multiple Labels per shipment or one Label per shipment, because in fact printing the label will incur costs,  we set up a test label for download,so the printed labels are all the same label
+#### 测试标签
+在沙盒环境中创建，每个装运有多个标签或每个装运有一个标签，因为实际上打印标签会产生成本，所以我们设置了一个测试标签供下载，所以打印的标签都是相同的标签
 
 
-### Test Environment: `https://api.sandbox.shipber.com` 
+### 测试环境: `https://api.sandbox.shipber.com` 
 
 <br>
 
-### Account password used for testing 
+### 测试使用的账号密码
 ```
 api-key： 2cn1wgmfidytin3jef3b 
 api-secret： qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C
@@ -56,20 +55,20 @@ api-secret： qRBYybjRch7BdTxO5NTyGUd6mBvowNbsjahnAnpdI-BXc5sCrRt15XGr-hc9oY7C
 
 <br>
 
-### Formal environment: `https://api.shipber.app` 
+### 正式环境: `https://api.shipber.app` 
 
 <br>
 
-### Suggested test steps
+### 测试步骤建议
 
-1. First use the test account to obtain the sending address according to the ship from interface (uuid and ship from will be returned)
-2. The next step is the validate interface to verify whether the sendable address is available
-3. The third step is the rate interface pricing (note: the uuid and detailed address of the ship from field are two options, it is recommended to use uuid because the error rate of only one field will be very low)
-4. Then there is the single creation interface of post/label (note that carrier service and rate id are fields returned according to the rate interface, and must be transmitted accordingly)
-5. The fifth step is to get/label to query the order interface
-6. The last is the cancel interface
+1. 首先使用测试账号根据ship from接口获得发件地址(会返回uuid和ship from)
+2. 接下来就是validate接口校验可发件地址是否可用
+3. 第三步就是rate接口计价（注意：ship from字段的uuid和详细地址是二选一的，建议使用uuid因为只有一条字段出错率会很低）
+4. 然后就是post/label的建单接口（注意carrier service和rate id是根据rate接口返回来的字段，一定要对应上进行传递）
+5. 第五步就是get/label查询订单接口
+6. 最后就是cancel接口
 
 <br>
 
-**Be sure to perform a very complete test in the test environment before going to the formal environment for ordering operations.**
+**请务必在测试环境进行非常完善的测试之后，再到正式环境进行打单操作。**
 
