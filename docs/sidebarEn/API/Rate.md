@@ -28,7 +28,7 @@
 | ﹂﹂addresses              |  [array]  |          | Length:1-35                                                  |
 | ﹂﹂city                   | [string]  |    √     | -                                                            |
 | ﹂﹂name                   | [string]  |          | Company name or sender name.<br>Length:1-35                  |
-| ﹂﹂phone                  | [boolean] |          | Length:10-15                                                 |
+| ﹂﹂phone                  | [string] |          | Length:10-15                                                 |
 | ﹂﹂attention              | [string]  |    √     | Sender's name or notes<br>Length:0-35                        |
 | ﹂ship_to                  | [object]  |    √     | -                                                            |
 | ﹂﹂addresses              |  [array]  |          | Length:1-35                                                  |
