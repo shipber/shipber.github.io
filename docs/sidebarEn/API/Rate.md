@@ -23,7 +23,7 @@
 | ﹂﹂uuid                   |  [array]  |          | Address unique id.If you want to improve the accuracy of the ship from address, you can choose to send only uuid.<br>such as:7b572b8d-08a3-4cc7-a711-1aae28e9ffcf |
 | ﹂﹂postal_code            | [string]  |    √     | Length:5-9                                                   |
 | ﹂﹂country_code           | [string]  |    √     | Length:2                                                     |
-| ﹂﹂state_or_province_code | [string]  |    √     | State shortcode.<br>Such as: CA<br/>Length:2                 |
+| ﹂﹂state_province_code | [string]  |    √     | State shortcode.<br>Such as: CA<br/>Length:2                 |
 | ﹂﹂is_residential         | [boolean] |          | If you send true,this address is residintial.If you send false,this address is commercial |
 | ﹂﹂addresses              |  [array]  |          | Length:1-35                                                  |
 | ﹂﹂city                   | [string]  |    √     | -                                                            |
@@ -73,7 +73,7 @@ curl -X POST  \
         "ship_from": {
             "postal_code": "90045-6275",
             "country_code": "US",
-            "state_or_province_code": "CA",
+            "state_province_code": "CA",
             "city": "LOS ANGELES"
         },
         "ship_to": {
