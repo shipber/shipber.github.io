@@ -37,7 +37,7 @@ curl -X GET  \
         "uuid": "22d953b7-24c4-4ae9-afb4-111cc227b01e",
         "postal_code": "90045",
         "country_code": "US",
-        "state_or_province_code": "CA",
+        "state_province_code": "CA",
         "is_residential": false,
         "addresses": ["5353 W Imperial Hwy Unit 900"],
         "city": "Los Angeles",
@@ -118,7 +118,7 @@ curl -X POST  \
         "original_address": {
             "postal_code": "90045",
             "country_code": "US",
-            "state_or_province_code": "CA",
+            "state_province_code": "CA",
             "is_residential": "",
             "addresses": ["5353 W Imperial Hwy Unit 900"],
             "city": "Los Angeles",
@@ -127,7 +127,7 @@ curl -X POST  \
         "matched_address": {
             "postal_code": "90045",
             "country_code": "US",
-            "state_or_province_code": "CA",
+            "state_province_code": "CA",
             "is_residential": false,
             "addresses": ["5353 W Imperial Hwy Unit 900"],
             "city": "Los Angeles",
