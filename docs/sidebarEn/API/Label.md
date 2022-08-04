@@ -49,9 +49,9 @@
 | ﹂﹂﹂width             | [number]  |    √     | -                                                            |
 | ﹂﹂﹂height            | [number]  |    √     | -                                                            |
 | ﹂﹂﹂length            | [number]  |    √     | -                                                            |
-| ﹂﹂﹂code              | [string]  |    √     | Dimension unit such as:IN,CM                                 |
+| ﹂﹂﹂code              | [string]  |    √     | Dimension unit such as:in,cm                                 |
 | ﹂﹂weight              | [object]  |    √     |                                                              |
-| ﹂﹂﹂code              | [string]  |    √     | Weight unit such as:LB,OZ,KG,G                               |
+| ﹂﹂﹂code              | [string]  |    √     | Weight unit such as:lb,oz,kg,g                               |
 | ﹂﹂﹂value             | [number]  |    √     | Weight<br/>Min:0.1oz<br/>Max:150lb                           |
 | ﹂﹂confirmation        | [string]  |    √     | -                                                            |
 | ﹂﹂insurance           | [object]  |          | -                                                            |
